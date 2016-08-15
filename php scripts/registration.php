@@ -5,7 +5,7 @@ Include('connect.php');
 //if submit is not blanked i.e. it is clicked.
 If(isset($_REQUEST['submit']))
 {
-	If($_REQUEST['name']=='' || $_REQUEST['email']=='' || $_REQUEST['password']=='')
+	If($_POST['name']=='' || $_POST['email']=='' || $_POST['password']==''|| $_POST['name']=='Name' || $_POST['email']=='Email address' || $_POST['password']=='Password')
 	{
 		
 		echo '<script language="javascript">';
@@ -18,25 +18,25 @@ If(isset($_REQUEST['submit']))
 
 	Else
 	{
-		$sql="insert into all_users(User_Full_Name,User_Email,User_Password) values('".$_REQUEST['name']."', '".$_REQUEST['email']."', '".$_REQUEST['password']."')";
+		$sql="insert into all_users(User_Full_Name,User_Email,User_Password) values('".$_POST['name']."', '".$_POST['email']."', '".$_POST['password']."')";
 		$res=mysqli_query($con,$sql);
-		If($res)
+		if($res)
 		{
-	
-	echo '<script language="javascript">';
-	echo 'alert("Welcome!")';
-	echo '</script>';
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
-}
 		
-		Else
+			echo '<script language="javascript">';
+			echo 'alert("Welcome!")';
+			echo '</script>';
+			print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
+		}
+			
+		else
 		{
 			echo '<script language="javascript">';
-	echo 'alert("There is some problem in inserting record")';
-	echo '</script>';
-	print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
-			
+			echo 'alert("There is some problem in inserting record")';
+			echo '</script>';
+			print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
+				
 		}
-	}
+	 }
 }
 ?>
