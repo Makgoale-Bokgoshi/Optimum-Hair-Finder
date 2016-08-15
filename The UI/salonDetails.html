@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Salon Details</title>
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -14,8 +14,6 @@
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- Custom Theme files -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="geolocation.css" />
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!--animate-->
@@ -60,9 +58,8 @@
 						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 							<nav class="cl-effect-1">
 								<ul class="nav navbar-nav">
-									<li><a href="#">About</a></li>
+									<li><a href="">About</a></li>
 										<li><a href="#">Faq</a></li>
-										<li><a href="#">Apps</a></li>
 										<li><a href="#">Contact Us</a></li>
 										<div class="clearfix"></div>
 								</ul>
@@ -76,10 +73,8 @@
 </div>
 <!--- /footer-btm ---->
 <!--- banner-1 ---->
-<div class="banner-1">
-	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
-	</div>
+<div class="banner-2">
+	<div class="container"></div>
 </div>
 <!--- /banner-1 ---->
 <!--- agent ---->
@@ -87,67 +82,33 @@
 	<div class="container">
 		<div class="col-md-6 agent-left wow fadeInDown animated" data-wow-delay=".5s">
 			<div class="ag-bt">
-				<a class="regist" href="#">Register Online &amp; Start Now</a>
+				<h3>Skydiva Beauty Works </h3>
 			</div>
-			<p>Submit details we will call you back</p>
-			<form>
-				<input type="text" placeholder="Name">
-				<input type="text" placeholder="Email">
-				<input type="text" placeholder="Organization">
-				<input type="text" placeholder="Phone">
-				<input type="text" placeholder="City">
-				<select name="" id="" class="grayTextNormal">
-					<option value="-- Select State --">-- Select State --</option>
-					<option value="Los Angeles Charter">Los Angeles Charter</option>
-					<option value="New Orleans">New Orleans Charter</option>
-					<option value="Charlotte">Charlotte Charter</option>
-					<option value="Washington">Washington Charter</option>
-				</select>
-				<textarea placeholder="Message"></textarea>
-				<div class="sub">
-					<input type="submit" value="Submit">
-				</div>
-			</form>
+			<h4>About Salon</h4>
+			<p>I have been going to this hair salon in Gardens for years and when I first 
+moved to Joburg I insisted that I would only cut my hair at Pink23 when I went 
+home for visits. Of course, it wasn’t practical and the last thing I wanted to be 
+doing on my short weekends at home was sit in a salon chair. The magic at Pink23 
+lies in the salon’s owner, Marisa. She is beyond amazing and one of the most 
+passionate hair stylists I have ever met. The salon is her home and she keeps a 
+close eye on everything that goes down in the salon, making sure that every 
+client leaves looking and feeling like a million bucks.</p>
+		
+			<h3>Contact Us</h3>
+			<p><a href="mailto:example@email.com">info@skydiva.com</a></p>
+			<p>+277129890</p>	
 		</div>
 		<div class="col-md-6 agent-right wow fadeInUp animated" data-wow-delay=".5s">
-<div id="map-canvas"> 
-<!-- Start of third page -->
-
-
-
-	<div class="ui-content">
-		<div id="directions-canvas">directions-canvas</div>
-	</div>
-
-	
-
-
-
-</div>
-						
-			
-	
-</div>
+			<div  style="background-color:#eee;width:500px;height:375px;" >
+			<p>TODO:map</p>
 			
 			
+			</div>
 			
-			
-			
-			
-			
-			
-			
-			
-			<h3>About Bus</h3>
-			<p>Lorem Ipsum comes from sections (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
-			<h3>Contact Us</h3>
-			<p><a href="mailto:example@email.com">contact@example.com</a></p>
-			<p>+4561238970</p>
 		</div>
 			<div class="clearfix"></div>
 	</div>
 </div>
-
 <!--- /agent ---->
 
 <!---copy-right ---->
@@ -166,7 +127,7 @@
 		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Optimum hair finder . All Rights Reserved</p>
 	</div>
 </div>
-
+<!--- /copy-right ---->
 <!-- sign -->
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
@@ -219,34 +180,31 @@
 										<ul>
 											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
 											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
-											
+								
 										</ul>
 									</div>
 									<div class="login-right">
-										<form>
+										<form name="login" method="post" action="UserLogin.php">
 											<h3>Sign in </h3>
-											<input type="text" value="Email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input type="text" name="email" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+											<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											<h4><a href="#">Forgot password</a></h4>
 											<div class="single-bottom">
 												<input type="checkbox" id="brand" value="">
 												<label for="brand"><span></span>Remember Me.</label>
 											</div>
-											<input type="submit" value="SIGNIN">
+											<input type="submit" name="submit" value="Login">
 										</form>
 									</div>
 									<div class="clearfix"></div>								
 								</div>
-								 
+								
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 <!-- //signin -->
-<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTZea67jn4YSPIGu0dNTHRyB1jnvo1Q00"></script>
-    <script src="geolocation.js"></script>
+
 </body>
 </html>
