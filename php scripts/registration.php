@@ -18,7 +18,7 @@ If(isset($_REQUEST['submit']))
 		{
 	
 	echo '<script language="javascript">';
-echo 'alert("message successfully sent")';
+echo 'alert("Welcome")';
 echo '</script>';
   print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
 }
