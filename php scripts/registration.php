@@ -7,7 +7,13 @@ If(isset($_REQUEST['submit']))
 {
 	If($_REQUEST['name']=='' || $_REQUEST['email']=='' || $_REQUEST['password']=='')
 	{
-		Echo "please fill the empty field.";
+		
+		echo '<script language="javascript">';
+	echo 'alert("please fill the empty field.")';
+	echo '</script>';
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
+	
+		
 	}
 
 	Else
@@ -18,14 +24,18 @@ If(isset($_REQUEST['submit']))
 		{
 	
 	echo '<script language="javascript">';
-echo 'alert("Welcome")';
-echo '</script>';
+	echo 'alert("Welcome!")';
+	echo '</script>';
   print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
 }
 		
 		Else
 		{
-			Echo "There is some problem in inserting record";
+			echo '<script language="javascript">';
+	echo 'alert("There is some problem in inserting record")';
+	echo '</script>';
+	print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
+			
 		}
 	}
 }
