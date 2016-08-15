@@ -16,8 +16,13 @@ If(isset($_REQUEST['submit']))
 		$res=mysqli_query($con,$sql);
 		If($res)
 		{
-			Echo "Record successfully inserted";
-		}
+	
+	echo '<script language="javascript">';
+echo 'alert("message successfully sent")';
+echo '</script>';
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.php\">";
+}
+		
 		Else
 		{
 			Echo "There is some problem in inserting record";
