@@ -19,11 +19,11 @@
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/wow.min.js"></script>
+<script src="js/modal.js"></script>
 	<script>
 		 new WOW().init();
 	</script>
 <!--//end-animate-->
-                                 <!-----------------------------start of first part---------------------------------------->
 <style>
     .multiselect {
         width: 200px;
@@ -49,6 +49,93 @@
     #checkboxes label:hover {
         background-color: #1e90ff;
     }
+    #myImg {
+	    border-radius: 5px;
+	    cursor: pointer;
+	    transition: 0.3s;
+	    display: inline;
+	    width: 24%;
+	    height: 23.5%;
+	}
+
+	#myImg:hover {opacity: 0.7;}
+
+	/* The Modal (background) */
+	.modal {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    padding-top: 100px; /* Location of the box */
+	    margin-left: 300px;
+	    margin-top: 50px;
+	    width: 700px; /* Full width */
+	    height: 600px; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+	    margin: auto;
+	    display: block;
+	    width: 400px;
+	    height: 400px;
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+	    display: block;
+	    width: 80%;
+	    text-align: center;
+	    font-size: 20px;
+	    color: #ccc;
+	    padding: 10px 0;
+	    height: 40px;
+	}
+
+	/* Add Animation */
+	.modal-content, #caption {
+	    -webkit-animation-name: zoom;
+	    -webkit-animation-duration: 0.6s;
+	    animation-name: zoom;
+	    animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+	    from {-webkit-transform:scale(0)}
+	    to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	    from {transform:scale(0)}
+	    to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+	    position: absolute;
+	    top: 15px;
+	    right: 35px;
+	    color: #f1f1f1;
+	    font-size: 20px;
+	    font-weight: bold;
+	    transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+	    color: #bbb;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	    .modal-content {
+	        width: 100%;
+	    }
+	}
 </style>
 
 <script>
@@ -64,7 +151,6 @@
         }
     }
 </script>
-                                              <!---------------------end of first part---------------------------->
 </head>
 <body>
 <!-- top-header -->
@@ -110,17 +196,13 @@
 
 	<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s">
 
-
-				                  <!---------------------start of second part---------------------------->
-
-
 		<h2>Search by category</h2>
 		<div class="ban-top">
 			<select name="" id="category" class="grayTextNormal" onclick="showCheckboxes()">
-				<option value="-- Select categories --">-- Select categories --</option>	
 			</select>
 		</div>
 		<div id="checkboxes">
+            <label class="grayTextNormal">--Select hairstyle categories--</label>
             <label for="1">Haircuts<input type="checkbox" id="1"/></label>
             <label for="2">Cornrows<input type="checkbox" id="2"/></label>
             <label for="3">Braids<input type="checkbox" id="3"/></label>
@@ -146,818 +228,141 @@
 		</div>
 
 	<div id = "haircuts">	 
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
+			<img id="myImg" src="images/1/Chizkop.jpg" class="img-responsive" alt="Chiskop" onclick="showX(src,alt)">
+			<div id="myModal" class="modal">
+			    <span class="close">Close</span>
+			    <div  style="float: left; margin-left:50px; margin-right:30px;">
+			        <div id="caption" style="margin-bottom: 10px;"></div>
+			        <img class="modal-content" id="img01">
+			    </div>
 
-				<img id="myImg" src="images/1/Chizkop.jpg" alt="Chiskop" width="200" height="200">
+			    <div style="margin-top: 150px;">
+			    	<p id="prices" style="color: #ccc;" >Price range: R15 - R25</p>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-bottom:50px; width:100px;">Book Now</button>
+			    </div>
+			    <div>
+			    	<p style="font-size: 15px; color: #ccc;" >View salons that offer this hairstyle.</p>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; ">View salons</button>
+			    </div>
+			</div>
+			<img id="myImg" src="images/1/fade.jpg" class="img-responsive" alt="" onclick="showX(src,alt)">
+			<div id="myModal" class="modal">
+			    <span class="close">Close</span>
+			    <div  style="float: left; margin-left:50px; margin-right:50px;">
+			        <div id="caption"></div>
+			        <img class="modal-content" id="img01">
+			    </div>
+			    <div>
+			    	<p style="color: #ccc;" >Price range: R15 - R25</p>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:2s0px; margin-bottom:10px; width:100px;">Book Now</button>
+			    </div>
+			    <div>
+			    	<p style="color: #ccc;" >View salons that offer this hairstyle.</p>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:10px;">View salons</button>
+			    </div>
+			</div>
+			<img id="myImg" src="images/1/Fade2.jpg" class="img-responsive" alt="" onclick="showX(src,alt)">
+			<div id="myModal" class="modal">
+			    <span class="close">Close</span>
+			    <div  style="float: left; margin-left:50px; margin-right:50px;">
+			        <div id="caption"></div>
+			        <img class="modal-content" id="img01">
+			    </div>
+			    <div>
+			    	<p style="color: #ccc;" >Price range: R15 - R25</p>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:2s0px; margin-bottom:10px; width:100px;">Book Now</button>
+			    </div>
+			    <div>
+			    	<p style="color: #ccc;" >View salons that offer this hairstyle.</p>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:10px;">View salons</button>
+			    </div>
+			</div>
+			<img id="myImg" src="images/1/FineCut.jpg" class="img-responsive" alt="">
+			<div id="myModal" class="modal">
+			    <span class="close">Close</span>
+			    <div  style="float: left; margin-left:50px; margin-right:50px;">
+			        <div id="caption"></div>
+			        <img class="modal-content" id="img01">
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:70px; width:100px;">Book Now</button>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:50px;">View salons</button>
+			    </div>
+			</div>      
+			<img id="myImg" src="images/1/FineCut2.jpg" class="img-responsive" alt="">
+			<div id="myModal" class="modal">
+			    <span class="close">Close</span>
+			    <div  style="float: left; margin-left:50px; margin-right:50px;">
+			        <div id="caption"></div>
+			        <img class="modal-content" id="img01">
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:70px; width:100px;">Book Now</button>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:50px;">View salons</button>
+			    </div>
+			</div>
 
-				<div id="myModal" class="modal">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
-				  <form action="index.html">
-			        <div class="sear">
-			            <button class="seabtn">Book Now</button>
-			        </div>
-			    </form>
-				</div>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/1/fade.jpg" class="img-responsive" alt="">
-							<div class="mask"  onclick="sendURL('images/1/fade.jpg')">
-								<h2>Fade</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/1/Fade2.jpg" class="img-responsive" alt="">
-							<div class="mask"  onclick="sendURL('images/1/Fade2.jpg')">
-								<h2>Fade</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/1/FineCut.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Fine cut</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>           
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/1/FineCut2.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Fine cut</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/1/Mohawk.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Mohawk</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/1/Shave.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Shave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		
-			<div class="clearfix"></div> 
-	</div>
-
-	<div id="cornrows">
-		 
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/2/Cornrows.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Cornrows</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/2/Cornrows2.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Cornrows</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/2/Cornrows3.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Cornrows</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/2/StraightBack.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Straight back</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-	</div>
-	<div id="braids">
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/BoxBraids.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Box braids</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Braids_Removal00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Braids removalk</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Braids_Styling.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Braids styling</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/FauxLocs.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>faux locs</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>           
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/HavanaTwist.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Havana twist</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Havannah00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Havana twist</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Havannah01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Havana twist</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Havannah02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>havana twist</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Single_Twist00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Twist</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/3/Single_Twist01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Twist</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Clip_In_or_Clip_On_Hair_Extensions02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Clip in extensions</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Crochet.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Crochet extensions</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-	</div>
-	<div id="chemicals">
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Dye_and_Highlights00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dye and highlight</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Dye_and_Highlights01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dye and highlight</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Dye_and_Highlights02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dye</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Dye_and_Highlights03.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dye and highlight</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Dye_and_highlights04.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dye and highlight</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_Relaxing00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hair relaxing</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_Relaxing01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hair relaxing</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_Relaxing02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>hair relaxing</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_Wash_and_Blow00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>hair wash and blow</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_wash00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hair wash</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_Wash01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>hair wash</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/hair_Wash02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hair wash</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/Hair_Wash03.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hair wash</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/S_Curl00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>S curl</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/4/S_Curl01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>S curl</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-	</div>
-	<div id="dreadlocks">
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/5/Dreadlocks_Braiding00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dreadlock styling</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/5/Dreadlocks_Braiding01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dreadlock styling</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/5/Dreadlocks_Braiding02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dreadlock styling</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/5/Dreadlocks_Braiding03.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dreadlock styling</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/5/Dreadlocks_Waxing00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dreadlock waxing</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/5/Dreadlocks_Waxing01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Dreadlock waxing</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-	</div>
-	<div id="extensions">
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Bonding_and_sealing_extensions00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Bonding and sealing extensions</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Bonding_and_sealing_extensions01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Bonding and sealing extensions</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Clip_In_or_Clip_On_Hair_Extensions00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Clip in extensions</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Clip_In_or_Clip_On_Hair_Extensions01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Clip in extensions</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/fusion_extension00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Fusion extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/fusion_extension01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Fusion extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/fusion_extension02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Fusion extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>		
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/fusion_extension03.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Fusion extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/hidden_Crown_Extensions00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hidden crown extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/hidden_Crown_Extensions01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hidden crown extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Tape_In_Extensions00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Hidden crown extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Tape_In_Extensions01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Tape in extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div> 
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Weave_and_Track_Extenstion00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Weave and track extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/6/Weave_and_Track_Extenstion01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Weave and track extension</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-	</div>
-	<div id="weaves">
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Brazilian_Weave00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Brazilian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Brazilian_Weave01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Brazilian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Brazilian_Weave02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Brazilian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Indian_Weaves00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Indian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Indian_Weaves01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Indian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Indian_Weaves02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Indian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Malaysian_Weaves00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Malaysian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Malaysian_Weaves01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Malaysian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Malaysian_Weaves02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Malaysian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Peruvian_weaves00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Peruvian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Peruvian_weaves01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Peruvian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Peruvian_weaves02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Peruvian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/7/Peruvian_weaves03.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Peruvian weave</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-	</div>
-	<div id="wigs">
-		<div class="col-md-3 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/8/Front_Lace_Closure00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Lace front closure wig</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/8/Front_Lace_Closure01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Lace front closure wig</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/8/Full_lace_wigs00.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Full lace wig</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/8/Full_lace_wigs01.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Full lace wig</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-		<div class="col-md-3 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			
-					<div class="view1 view1-sixth">
-						<img src="images/8/Full_lace_wigs02.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Full lace wig</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-	</div>
+			<img id="myImg" src="images/1/Mohawk.jpg" class="img-responsive" alt="">
+			<div id="myModal" class="modal">
+			    <span class="close">Close</span>
+			    <div  style="float: left; margin-left:50px; margin-right:50px;">
+			        <div id="caption"></div>
+			        <img class="modal-content" id="img01">
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:70px; width:100px;">Book Now</button>
+			    </div>
+			    <div class="sear">
+			        <button style="padding: 6px 13px; font-size: 13px; margin-top:50px;">View salons</button>
+			    </div>
+			</div>
+		</div>
+	
 </div>
 <!--- /details ---->
 	
 	
 	</div>
 </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
 <script> 
 function showDiv(){
 	var count = 0;
@@ -1020,17 +425,7 @@ function showDiv(){
 	} else {wigs.style.display = "none";}
 	if(count == 0){ cityH.innerText = "Choose hair category"; }
 }
-
-function sendURL(path){
-	window.location.href="PictureView.html";
-}
 </script>
-
-
-				                  <!---------------------end of second part---------------------------->
-
-
-
 <!---copy-right ---->
 <div class="copy-right">
 	<div class="container">
