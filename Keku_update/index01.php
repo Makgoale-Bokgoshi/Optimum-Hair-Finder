@@ -227,112 +227,6 @@
 			<h3 id="cityH"></h3>
 		</div>
 
-	<div id = "haircuts">	 
-			<img id="myImg" src="images/1/Chizkop.jpg" class="img-responsive" alt="Chiskop" onclick="showX(src,alt)">
-			<div id="myModal" class="modal">
-			    <span class="close">Close</span>
-			    <div  style="float: left; margin-left:50px; margin-right:30px;">
-			        <div id="caption" style="margin-bottom: 10px;"></div>
-			        <img class="modal-content" id="img01">
-			    </div>
-
-			    <div style="margin-top: 150px;">
-			    	<p id="prices" style="color: #ccc;" >Price range: R15 - R25</p>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:10px; margin-bottom:50px; width:100px;">Book Now</button>
-			    </div>
-			    <div>
-			    	<p style="font-size: 15px; color: #ccc;" >View salons that offer this hairstyle.</p>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; ">View salons</button>
-			    </div>
-			</div>
-			<img id="myImg" src="images/1/fade.jpg" class="img-responsive" alt="" onclick="showX(src,alt)">
-			<div id="myModal" class="modal">
-			    <span class="close">Close</span>
-			    <div  style="float: left; margin-left:50px; margin-right:50px;">
-			        <div id="caption"></div>
-			        <img class="modal-content" id="img01">
-			    </div>
-			    <div>
-			    	<p style="color: #ccc;" >Price range: R15 - R25</p>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:2s0px; margin-bottom:10px; width:100px;">Book Now</button>
-			    </div>
-			    <div>
-			    	<p style="color: #ccc;" >View salons that offer this hairstyle.</p>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:10px;">View salons</button>
-			    </div>
-			</div>
-			<img id="myImg" src="images/1/Fade2.jpg" class="img-responsive" alt="" onclick="showX(src,alt)">
-			<div id="myModal" class="modal">
-			    <span class="close">Close</span>
-			    <div  style="float: left; margin-left:50px; margin-right:50px;">
-			        <div id="caption"></div>
-			        <img class="modal-content" id="img01">
-			    </div>
-			    <div>
-			    	<p style="color: #ccc;" >Price range: R15 - R25</p>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:2s0px; margin-bottom:10px; width:100px;">Book Now</button>
-			    </div>
-			    <div>
-			    	<p style="color: #ccc;" >View salons that offer this hairstyle.</p>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:10px;">View salons</button>
-			    </div>
-			</div>
-			<img id="myImg" src="images/1/FineCut.jpg" class="img-responsive" alt=""  onclick="showX(src,alt)">
-			<div id="myModal" class="modal">
-			    <span class="close">Close</span>
-			    <div  style="float: left; margin-left:50px; margin-right:50px;">
-			        <div id="caption"></div>
-			        <img class="modal-content" id="img01">
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:70px; width:100px;">Book Now</button>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:50px;">View salons</button>
-			    </div>
-			</div>      
-			<img id="myImg" src="images/1/FineCut2.jpg" class="img-responsive" alt=""  onclick="showX(src,alt)">
-			<div id="myModal" class="modal">
-			    <span class="close">Close</span>
-			    <div  style="float: left; margin-left:50px; margin-right:50px;">
-			        <div id="caption"></div>
-			        <img class="modal-content" id="img01">
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:70px; width:100px;">Book Now</button>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:50px;">View salons</button>
-			    </div>
-			</div>
-
-			<img id="myImg" src="images/1/Mohawk.jpg" class="img-responsive" alt="" >
-			<div id="myModal" class="modal">
-			    <span class="close">Close</span>
-			    <div  style="float: left; margin-left:50px; margin-right:50px;">
-			        <div id="caption"></div>
-			        <img class="modal-content" id="img01">
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:70px; width:100px;">Book Now</button>
-			    </div>
-			    <div class="sear">
-			        <button style="padding: 6px 13px; font-size: 13px; margin-top:50px;">View salons</button>
-			    </div>
-			</div>
-		</div>
 	
 </div>
 <!--- /details ---->
@@ -340,87 +234,76 @@
 	
 	</div>
 </div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-</script>
 <script> 
 function showDiv(){
 	var count = 0;
+	var element = document.createElement("div");
 	document.getElementById('More').style.display = "block";
 	var cont = document.getElementById("countainer");
 
 	if(document.getElementById("1").checked){
 		cityH.innerText = "Haircuts";
-		haircuts.style.display = "block";
 		count++;
+
+		
+	    element.appendChild(<?php include 'Hair_Cut.php';?>);
+	    document.getElementById('details').appendChild(element);
 	} else {haircuts.style.display = "none";}
+
 	if(document.getElementById("2").checked){
 		if(count == 0){
 			cityH.innerText = "Cornrows";
 		} else {cityH.innerText = cityH.innerText + " + Cornrows";}
-		cornrows.style.display = "block";
+	    element.appendChild(<?php include 'Cornrows.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {cornrows.style.display = "none";}
 	if(document.getElementById("3").checked){
 		if(count == 0){
 			cityH.innerText = "Braids";
 		} else {cityH.innerText = cityH.innerText + " + Braids";}
-		braids.style.display = "block";
+	    element.appendChild(<?php include 'Braids.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {braids.style.display = "none";}
 	if(document.getElementById("4").checked){
 		if(count == 0){
 			cityH.innerText = "Chemicals and hair wash";
 		} else {cityH.innerText = cityH.innerText + " + Chemicals and hair wash";}
-		chemicals.style.display = "block";
+	    element.appendChild(<?php include 'Chemicals_and_Hair_Wash.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {chemicals.style.display = "none";}
 	if(document.getElementById("5").checked){
 		if(count == 0){
 			cityH.innerText = "Dreadlocks";
 		} else {cityH.innerText = cityH.innerText + " + Dreadlocks";}
-		dreadlocks.style.display = "block";
+	    element.appendChild(<?php include 'Dreadlocks.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {dreadlocks.style.display = "none";}
 	if(document.getElementById("6").checked){
 		if(count == 0){
 			cityH.innerText = "Hair extensions";
 		} else {cityH.innerText = cityH.innerText + " + Hair extensions";}
-		extensions.style.display = "block";
+	    element.appendChild(<?php include 'Hair_Extensions.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {extensions.style.display = "none";}
 	if(document.getElementById("7").checked){
 		if(count == 0){
 			cityH.innerText = "Weaves";
 		} else {cityH.innerText = cityH.innerText + " + Weaves";}
-		weaves.style.display = "block";
+	    element.appendChild(<?php include 'Weaves.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {weaves.style.display = "none";}
 	if(document.getElementById("8").checked){
 		if(count == 0){
 			cityH.innerText = "Wigs";
 		} else {cityH.innerText = cityH.innerText + " + Wigs";}
-		wigs.style.display = "block";
+	    element.appendChild(<?php include 'Wigs.php';?>);
+	    document.getElementById('details').appendChild(element);
 		count++;
 	} else {wigs.style.display = "none";}
 	if(count == 0){ cityH.innerText = "Choose hair category"; }
