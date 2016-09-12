@@ -1,6 +1,6 @@
-﻿<?php
-	include_once 'func_inc.php';
-	connect();
+<?php
+	include 'func_inc.php';
+	
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -85,8 +85,9 @@
 	<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s">
 		<h2>Search for Salons in Gauteng</h2>
 		<div class="ban-top">
-			<select name="" id="city" class="grayTextNormal">
-					<option value="-- Select State --">-- Select Location --</option>
+			<form action="func_inc.php" method = "POST">
+			<select name="city" id="city" class="grayTextNormal">
+					<!--<option value="-- Select State --">-- Select Location --</option>-->
 					<option value="Braamfontein">Braamfontein</option>
 					<option value="Auckland park">Auckland park</option>
 					<option value="parktown">parktown</option>
@@ -94,8 +95,8 @@
 				</select>
 		</div>
 		<div class="sear">
-			<form action="#More">
-				<button class="seabtn" onclick="showDiv()">Search for salons</button>
+			
+				<input type="submit" name="submit" value="Search For Salons" class="seabtn">
 			</form>
 		</div>
 	</div>
@@ -103,18 +104,25 @@
 	<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s"><!-- Checkboxes -->
 		<h2>Search for Salons by Hair Category</h2>
 		<div class="ban-top">
-			<select name="" id="haircategory" class="grayTextNormal">
+			<form method = "post" action="button.php">
+				<select name="hair_cate" id="haircategory" class="grayTextNormal">
 					<option value="-- Select State --">-- Select Location --</option>
 					<?php
-						checkboxes();
+						checkboxquery(); 
 					?>
 				</select>
 		</div>
 		<div class="sear">
-			<form action="#More">
-				<button class="seabtn" onclick="showDiv()">Search by Hair Category</button>
-			</form>
+				<?php
+					if (isset($_POST['shair'])){
+						printout();
+					}//end of if isset
+				?>
+				<input type="submit" name="shair" value="Search For Salons" class="seabtn">
+				
+			
 		</div>
+			</form>
 	</div>
 	
 	<div class="clearfix"></div>

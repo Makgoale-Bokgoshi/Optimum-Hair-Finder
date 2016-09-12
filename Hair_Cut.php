@@ -12,11 +12,12 @@ $db=mysql_select_db($dbname,$con) or die("Failed to connect to MySQL: " . mysql_
 
 
     $img_url = "http://www.domain.com/images/"; 
-    $result = mysql_query("SELECT Picture FROM hair_styles ");
+    $result = mysql_query("SELECT Picture FROM hair_styles where Category_ID=1");
+    $name = mysql_query("SELECT Style_Description FROM hair_styles where Category_ID=1");
 	///*where Category_ID=1*/
-    while($row = mysql_fetch_assoc($result)) 
+    while($row = mysql_fetch_assoc($result) && $row1 = mysql_fetch_assoc($name)) 
     { 
-echo '<img src="./Style_Pictures/'.$row["Picture"]. '" width="225" height="200"  style="margin-right: 5px "/>';
+echo '<img src="./Style_Pictures/Hair Cut/'.$row["Picture"]. '" width="225" height="200"  style="margin-right: 5px " onclick="showX(src,.$row1[""])"/>';
         
     }
 	?>
