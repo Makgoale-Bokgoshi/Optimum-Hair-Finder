@@ -162,8 +162,28 @@
 			</form>
 		</div>
 		<div class="col-md-6 agent-right wow fadeInUp animated" data-wow-delay=".5s">
+		<div style="width:500px; height:250px;">
+				<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqpOYGCysNM4qI38ee4uJwDJtoNHsK1jg&callback=initMap"></script>
+						<select id="mode">
+							<option value="DRIVING">Driving</option>
+							<option value="WALKING">Walking</option>
+							<option value="BICYCLING">Bicycling</option>
+							<option value="TRANSIT">Transit</option>
+						</select>
+						<section id="map-canvas"></section>
+						<style>
+							#map-canvas {
+							  height: 80%;
+							  width: 80%;
+							}  
+
+						</style>
+						<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+						 
+						<div id="map-canvas"></div>
+			</div>
 			<h3>About Salon</h3>
-			<p>Salon Media Group has driven the national conversation since 1995 through its fearless journalism and, more recently, original video, distributed across Salon.com, social media, mobile devices, and wearable apps. Salon’s award-winning content reaches an audience of approximately 20 million monthly unique visitors. </p>
+			<p>Salon Media Group has driven the national conversation since 1995 through its fearless journalism and, more recently, original video, distributed across Salon.com, social media, mobile devices, and wearable apps. Salonâ€™s award-winning content reaches an audience of approximately 20 million monthly unique visitors. </p>
 			
 		</div>
 			<div class="clearfix"></div>
@@ -183,7 +203,7 @@
 				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Optimum hair finder . All Rights Reserved</p>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Â© 2016 Optimum hair finder . All Rights Reserved</p>
 	</div>
 </div>
 <!--- /copy-right ---->
@@ -230,7 +250,7 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>						
 						</div>
 						<div class="modal-body modal-spa">
 							<div class="login-grids">
@@ -264,6 +284,72 @@
 				</div>
 			</div>
 <!-- //signin -->
+<script>
 
+function initMap() {
+ /*if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+		
+		"Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+		
+		
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+
+
+*/
+
+
+  var pointA = new google.maps.LatLng(-26.1795, 28.0454),
+    pointB = new google.maps.LatLng(-26.1811, 28.0454),
+    center = new google.maps.LatLng(51.3, 0.8),
+    myOptions = {
+      zoom: 8,
+      center: center,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
+    // Instantiate a directions service.
+    directionsService = new google.maps.DirectionsService;
+  directionsDisplay = new google.maps.DirectionsRenderer({
+      map: map
+    }),
+
+    outputAtoB = document.getElementById('a2b'),
+
+    // click on marker B to get route from A to B
+    calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB, outputAtoB);
+
+  var travelMode = document.getElementById("mode");
+  travelMode.addEventListener("change", function() {
+    calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB, outputAtoB);
+  });
+}
+
+
+function calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB, outputTxt) {
+  var selectedMode = document.getElementById('mode').value;
+  directionsService.route({
+    origin: pointA,
+    destination: pointB,
+    unitSystem: google.maps.UnitSystem.METRIC,
+    travelMode: google.maps.TravelMode[selectedMode]
+  }, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(response);
+
+      outputTxt.innerHTML = Math.round(directionsDisplay.getDirections().routes[directionsDisplay.getRouteIndex()].legs[0].distance.value / 1000) + "Km";
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
+}
+
+initMap();
+
+
+</script>
 </body>
 </html>
