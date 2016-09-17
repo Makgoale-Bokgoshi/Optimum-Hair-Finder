@@ -15,6 +15,8 @@
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqpOYGCysNM4qI38ee4uJwDJtoNHsK1jg&callback=initMap"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/bootstrap.min.js"></script>
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
@@ -160,30 +162,10 @@
 					<input type="submit" Name="submit" value="Submit">
 				</div>
 			</form>
-		</div>
-		<div class="col-md-6 agent-right wow fadeInUp animated" data-wow-delay=".5s">
-		<div style="width:500px; height:250px;">
-				<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqpOYGCysNM4qI38ee4uJwDJtoNHsK1jg&callback=initMap"></script>
-						<select id="mode">
-							<option value="DRIVING">Driving</option>
-							<option value="WALKING">Walking</option>
-							<option value="BICYCLING">Bicycling</option>
-							<option value="TRANSIT">Transit</option>
-						</select>
-						<section id="map-canvas"></section>
-						<style>
-							#map-canvas {
-							  height: 80%;
-							  width: 80%;
-							}  
-
-						</style>
-						<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-						 
-						<div id="map-canvas"></div>
-			</div>
-			<h3>About Salon</h3>
-			<p>Salon Media Group has driven the national conversation since 1995 through its fearless journalism and, more recently, original video, distributed across Salon.com, social media, mobile devices, and wearable apps. Salon’s award-winning content reaches an audience of approximately 20 million monthly unique visitors. </p>
+	</div>
+		<div class="col-md-6 agent-right wow fadeInUp animated" data-wow-delay=".5s"  style="padding-top: 100px;>
+			<div  style="background-color:#eee;width:500px;height:500px;" >
+		<div id="mapcanvas" style="width:100%;  height:500px;  border: 1px solid rgb(29, 26, 26);"></div>
 			
 		</div>
 			<div class="clearfix"></div>
@@ -203,7 +185,7 @@
 				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Optimum hair finder . All Rights Reserved</p>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> 2016 Optimum hair finder . All Rights Reserved</p>
 	</div>
 </div>
 <!--- /copy-right ---->
@@ -250,7 +232,7 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>						
 						</div>
 						<div class="modal-body modal-spa">
 							<div class="login-grids">
@@ -285,70 +267,65 @@
 			</div>
 <!-- //signin -->
 <script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+      } else {
+        error('not supported');
+      }
 
-function initMap() {
- /*if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-		
-		"Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
-		
-		
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
+      var directionDisplay;
+      var directionsService = new google.maps.DirectionsService();
+      var map;
 
+      function success(position) {
+        directionsDisplay = new google.maps.DirectionsRenderer();
+        var latlng = new google.maps.LatLng(-26.1811, 28.0454);
+        var mapOptions = {
+          zoom:15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: latlng
+        }
+        map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+        directionsDisplay.setMap(map);
+        directionsDisplay.setPanel(document.getElementById("directionPanel"));
 
-*/
+        var start = "-26.1811, 28.0454";
+        var end =  position.coords.latitude + ',' + position.coords.longitude;
+        var mode;
 
+        switch ( 'driving' )
+        {
+          case 'bicycling' :
+            mode = google.maps.DirectionsTravelMode.BICYCLING;
+            break;
+          case 'driving':
+            mode = google.maps.DirectionsTravelMode.DRIVING;
+            break;
+          case 'walking':
+            mode = google.maps.DirectionsTravelMode.WALKING;
+            break;
+        }
+        var request = {
+            origin:start,
+            destination:end,
+            travelMode: mode
+        };
+        
+        directionsService.route(request, function(response, status) {
+          if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+          }
+        });
 
-  var pointA = new google.maps.LatLng(-26.1795, 28.0454),
-    pointB = new google.maps.LatLng(-26.1811, 28.0454),
-    center = new google.maps.LatLng(51.3, 0.8),
-    myOptions = {
-      zoom: 8,
-      center: center,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    },
-    map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
-    // Instantiate a directions service.
-    directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer({
-      map: map
-    }),
+      }
 
-    outputAtoB = document.getElementById('a2b'),
-
-    // click on marker B to get route from A to B
-    calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB, outputAtoB);
-
-  var travelMode = document.getElementById("mode");
-  travelMode.addEventListener("change", function() {
-    calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB, outputAtoB);
-  });
-}
-
-
-function calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB, outputTxt) {
-  var selectedMode = document.getElementById('mode').value;
-  directionsService.route({
-    origin: pointA,
-    destination: pointB,
-    unitSystem: google.maps.UnitSystem.METRIC,
-    travelMode: google.maps.TravelMode[selectedMode]
-  }, function(response, status) {
-    if (status == google.maps.DirectionsStatus.OK) {
-      directionsDisplay.setDirections(response);
-
-      outputTxt.innerHTML = Math.round(directionsDisplay.getDirections().routes[directionsDisplay.getRouteIndex()].legs[0].distance.value / 1000) + "Km";
-    } else {
-      window.alert('Directions request failed due to ' + status);
-    }
-  });
-}
-
-initMap();
-
+      function error(msg) {
+        var s = document.querySelector('#status');
+        s.innerHTML = typeof msg == 'string' ? msg : "failed";
+        s.className = 'fail';
+  
+        console.log(arguments);
+       }
 
 </script>
 </body>
