@@ -32,8 +32,11 @@
 <div class="top-header">
 	<div class="container">
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 			
-			<li class="sig"><a href="#"  >Amy</a></li> 
-			<li class="sigi"><a href="index01.php" >/ Sign out</a></li>
+			<li class="sig"><a href="#"  ><?php 
+			session_start();
+			$name = $_SESSION['res'];
+			echo $name;?></a></li> 
+			<li class="sigi"><a href="index01.php" >  Sign out</a></li>
         </ul>
 		<div class="clearfix"></div>
 	</div>
@@ -56,19 +59,6 @@
 							<span class="icon-bar"></span>
 						  </button>
 						</div>
-						
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<!--<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-							<nav class="cl-effect-1">
-								<ul class="nav navbar-nav">
-									<li><a href="">About</a></li>
-										<li><a href="#">Faq</a></li>
-										<li><a href="#">Apps</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<div class="clearfix"></div>
-								</ul>
-							</nav>
-						</div> /.navbar-collapse -->	
 					</nav>
 				</div>
 		
