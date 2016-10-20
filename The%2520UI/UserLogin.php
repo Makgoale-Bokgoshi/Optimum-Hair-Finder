@@ -7,46 +7,47 @@ Include('define.php');
 
 if(isset($_POST['submit']))
 {
-	If($_POST['email']=='' || $_POST['password']=='' || $_POST['email']=='Email address' || $_POST['password']=='Password')
-	{
-		
-		echo '<script language="javascript">';
-	echo 'alert("please fill the empty field.")';
-	echo '</script>';	
-	print "<meta http-equiv=\"refresh\" content=\"0;URL=index01.php\">";
-	}
+		If($_POST['email']=='' || $_POST['password']=='' || $_POST['email']=='Email address' || $_POST['password']=='Password')
+		{
+			
+			echo '<script language="javascript">';
+			echo 'alert("please fill the empty field.")';
+			echo '</script>';	
+			print "<meta http-equiv=\"refresh\" content=\"0;URL=index01.php\">";
+		}
 	
-	else{
-	$query = mysqli_query($con,"SELECT *  FROM all_users where User_Email = '$_POST[email]' AND User_Password = '$_POST[password]'") or die(mysqli_error());
-	$row = mysqli_fetch_array($query);
-	if(!empty($row['User_Email']) AND !empty($row['User_Password']))
-	{
-		$query = "SELECT User_Full_Name FROM all_users where User_Email = '$_POST[email]' AND User_Password = '$_POST[password]'";
-		$result = mysqli_query($con,$query);
-		if (mysqli_num_rows($result) == 1) 
-		{ 
-			while($row = mysqli_fetch_array($result)) 
+		else
+		{
+			$query = mysqli_query($con,"SELECT User_Full_Name  FROM all_users where User_Email = '$_POST[email]' AND User_Password = '$_POST[password]'") or die(mysqli_error());
+			
+			
+				if (mysqli_num_rows($query) == 1) 
+				{ 
+					while($row = mysqli_fetch_array($query)) 
+					{
+						//On page 1
+								session_start();
+
+							//On page 1
+								$_SESSION['res'] = "Hello ".$row['User_Full_Name']. "	|";
+						print "<meta http-equiv=\"refresh\" content=\"0;URL=startbackup2.php\">";
+
+						 
+					}
+				} 
+
+			
+			else
 			{
 				echo '<script language="javascript">';
-			echo 'alert("Welcome!")';
-			echo '</script>';
-				print "<meta http-equiv=\"refresh\" content=\"0;URL=startbackup2.php\">";
-
-				 
+				echo 'alert("SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...")';
+				echo '</script>';
+				print "<meta http-equiv=\"refresh\" content=\"0;URL=index01.php\">";
+				
 			}
-		} 
-
-	}
-	else
-	{
-	echo '<script language="javascript">';
-	echo 'alert("SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...")';
-	echo '</script>';
-	print "<meta http-equiv=\"refresh\" content=\"0;URL=index01.php\">";
-		
-	}
-	}
+		}
 }
+
 
 
 
