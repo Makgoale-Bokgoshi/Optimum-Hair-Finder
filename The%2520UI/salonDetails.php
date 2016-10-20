@@ -31,8 +31,11 @@
 <div class="top-header">
 	<div class="container">
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 			
-			<li ><a href="#" >Amy</a></li> 
-			<li ><a href="index01.php"  >/ Sign Out</a></li>
+			<li class="sig"><a href="#"  ><?php 
+			session_start();
+			$name = $_SESSION['res'];
+			echo $name;?></a></li> 
+			<li class="sigi"><a href="index01.php" >  Sign out</a></li>
         </ul>
 		<div class="clearfix"></div>
 	</div>
