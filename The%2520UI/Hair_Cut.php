@@ -16,7 +16,7 @@ $db=mysqli_select_db($con,$dbname) or die("Failed to connect to MySQL: " . mysql
 	///*where Category_ID=1*/
     while($row = mysqli_fetch_assoc($result)) 
     { 
-echo 'z<img src="./Style_Pictures/Hair-Cut/'.$row["Hairstyle_Picture"]. '" width="225" height="200"  style="margin-right: 5px "/>';
+echo '<a href="#" data-toggle="modal" data-target="#myModal4" ><img src="./Style_Pictures/Hair-Cut/'.$row["Hairstyle_Picture"]. '" width="225" height="200"  style="margin-right: 5px "/></a>';
         
     }
 	?>
