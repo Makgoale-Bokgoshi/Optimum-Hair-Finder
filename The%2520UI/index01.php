@@ -56,7 +56,7 @@
 <!--- footer-btm ---->
 <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
 		<div class="container">
-				<div class="navigation">
+				  <div class="navigation">
 					<nav class="navbar navbar-default">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
@@ -289,7 +289,7 @@ if(document.getElementById("2").checked){
 						</div>
 						<div class="modal-body modal-spa">
 							<div class="login-grids">
-								<div class="login">
+								<div class="login" id="login1">
 									<div class="login-left">
 										<ul>
 											<li><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Sign in with facebook</fb:login-button></li>
@@ -301,6 +301,7 @@ if(document.getElementById("2").checked){
 											<input type="text" name="email" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
 											<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											<h4><a href="changep.html">Forgot password</a></h4>
+											<h4>Don't have an account?<a href="#" data-toggle="modal" data-target="#myModal">Sign Up</a> </h4>
 											<div class="single-bottom">
 												<input type="checkbox" id="brand" value="">
 												<label for="brand"><span></span>Remember Me.</label>
