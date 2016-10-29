@@ -1,0 +1,1032 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	deleted:    All.php
+#	deleted:    All_HairStyles.php
+#	deleted:    Booking Form.html
+#	renamed:    Newest-Database.sql -> Database/Newest-Database.sql
+#	new file:   Log-In-and-Sign-Up/Login.php
+#	new file:   Log-In-and-Sign-Up/RegisterUser.php
+#	new file:   Log-In-and-Sign-Up/UserLogin.php
+#	new file:   Log-In-and-Sign-Up/facebook_index.html
+#	new file:   Log-In-and-Sign-Up/php%20scripts/UserLogin.php
+#	new file:   Log-In-and-Sign-Up/php%20scripts/basic-html.html
+#	new file:   Log-In-and-Sign-Up/php%20scripts/connect.php
+#	new file:   Log-In-and-Sign-Up/php%20scripts/define.php
+#	new file:   Log-In-and-Sign-Up/php%20scripts/func_inc.php
+#	new file:   Log-In-and-Sign-Up/php%20scripts/index.php
+#	renamed:    php scripts/login_fb.php -> Log-In-and-Sign-Up/php%20scripts/login_fb.php
+#	renamed:    php scripts/login_g+.php -> Log-In-and-Sign-Up/php%20scripts/login_g+.php
+#	new file:   Log-In-and-Sign-Up/php%20scripts/registration.php
+#	new file:   Log-In-and-Sign-Up/registration.php
+#	deleted:    Login.php
+#	deleted:    MakeBooking.php
+#	renamed:    Non-Functionalitities of Optimum Hair Finder Attempt 2.docx -> Optimum_Hair_Finder_Documents/Non-Functionalitities of Optimum Hair Finder Attempt 2.docx
+#	renamed:    Project proposal.pdf -> Optimum_Hair_Finder_Documents/Project proposal.pdf
+#	renamed:    RAD v01.docx -> Optimum_Hair_Finder_Documents/RAD v01.docx
+#	renamed:    Requirements Analysis Document.docx -> Optimum_Hair_Finder_Documents/Requirements Analysis Document.docx
+#	renamed:    Software Architecture.pdf -> Optimum_Hair_Finder_Documents/Software Architecture.pdf
+#	renamed:    Test Documents/Testing Document for the Main index file after registering.docx -> Optimum_Hair_Finder_Documents/Test Documents/Testing Document for the Main index file after registering.docx
+#	renamed:    Test%20Documents/Searching By Price Ranges Testing Document.docx -> Optimum_Hair_Finder_Documents/Test%20Documents/Searching By Price Ranges Testing Document.docx
+#	renamed:    Test%20Documents/UserCases Of Search by Price Range.docx -> Optimum_Hair_Finder_Documents/Test%20Documents/UserCases Of Search by Price Range.docx
+#	renamed:    Tests/Test cases for Use cases.docx -> Optimum_Hair_Finder_Documents/Tests/Test cases for Use cases.docx
+#	renamed:    Use Cases -> Optimum_Hair_Finder_Documents/Use Cases
+#	renamed:    Uses Cases/UserCases.docx -> Optimum_Hair_Finder_Documents/Uses Cases/UserCases.docx
+#	renamed:    Uses%20Cases/UseCases 01.docx -> Optimum_Hair_Finder_Documents/Uses%20Cases/UseCases 01.docx
+#	renamed:    Uses%20Cases/UserCases.docx -> Optimum_Hair_Finder_Documents/Uses%20Cases/UserCases.docx
+#	renamed:    Uses%2520Cases/System Sequence Diagrams 0.0.docx -> Optimum_Hair_Finder_Documents/Uses%2520Cases/System Sequence Diagrams 0.0.docx
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Braids.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Chemicals_and_Hair_Wash.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Cornrows.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Dreadlocks.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Hair_Cut.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Hair_Extensions.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Images.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/SalonGallery.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Weaves.php
+#	deleted:    PHP-for-Searching-before-login-Select-Categories-from-Index01/Wigs.php
+#	deleted:    PHP_Scripts_For_SearchByLocation/SearchByLocation.php
+#	deleted:    RegisterUser.php
+#	renamed:    Salon%20Images/Big Brother.PNG -> Salon Images/Big Brother.PNG
+#	renamed:    Salon%20Images/Ebenezer.PNG -> Salon Images/Ebenezer.PNG
+#	renamed:    Salon%20Images/Nelly.PNG -> Salon Images/Nelly.PNG
+#	deleted:    Salon Names and Co-ordinates.PNG
+#	deleted:    Salon_Info.php
+#	deleted:    Search.html
+#	deleted:    SearchByLocation.php
+#	deleted:    Searching by Category/Braids.php
+#	deleted:    Searching by Category/Chemicals_and_Hair_Wash.php
+#	deleted:    Searching by Category/Cornrows.php
+#	deleted:    Searching by Category/Dreadlocks.php
+#	deleted:    Searching by Category/Hair_Cut.php
+#	deleted:    Searching by Category/Hair_Extensions.php
+#	deleted:    Searching by Category/Weaves.php
+#	deleted:    Searching by Category/Wigs.php
+#	deleted:    Searching by Category/index01.php
+#	new file:   Searching/Salon_Info.php
+#	new file:   Searching/Search-By-Location/SearchByLocation.php
+#	renamed:    PHP_Scripts_For_SearchByLocation/connect.php -> Searching/Search-By-Location/connect.php
+#	new file:   Searching/Search-by-Price-Range/Tshepos%20Code/SearchByPriceRanges/func_inc3.php
+#	new file:   Searching/Search-by-Price-Range/Tshepos%20Code/SearchByPriceRanges/func_inc4.php
+#	new file:   Searching/Search-by-Price-Range/Tshepos%20Code/SearchByPriceRanges/proto.php
+#	new file:   Searching/Search-by-Price-Range/Tshepos%20Code/define.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Braids.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Chemicals_and_Hair_Wash.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Cornrows.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Dreadlocks.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Hair_Cut.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Hair_Extensions.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Images.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/SalonGallery.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Weaves.php
+#	new file:   Searching/Searching-by-Hair-Category-index01/Wigs.php
+#	new file:   Searching/Studio_Names.php
+#	renamed:    Style_Pictures/Bonding-01.jpg -> Searching/Style_Pictures/Bonding-01.jpg
+#	renamed:    Style_Pictures/Bonding-02.jpg -> Searching/Style_Pictures/Bonding-02.jpg
+#	renamed:    Style_Pictures/Bonding-03.jpg -> Searching/Style_Pictures/Bonding-03.jpg
+#	renamed:    Style_Pictures/Bonding-04.jpg -> Searching/Style_Pictures/Bonding-04.jpg
+#	renamed:    Style_Pictures/Bonding-05.jpeg -> Searching/Style_Pictures/Bonding-05.jpeg
+#	renamed:    Style_Pictures/Bonding-06.jpg -> Searching/Style_Pictures/Bonding-06.jpg
+#	renamed:    Style_Pictures/Bonding_and_sealing_extensions00.jpg -> Searching/Style_Pictures/Bonding_and_sealing_extensions00.jpg
+#	renamed:    Style_Pictures/Bonding_and_sealing_extensions01.jpg -> Searching/Style_Pictures/Bonding_and_sealing_extensions01.jpg
+#	renamed:    Style_Pictures/BoxBraids-02.jpg -> Searching/Style_Pictures/BoxBraids-02.jpg
+#	renamed:    Style_Pictures/Braids/BoxBraids-03.jpg -> Searching/Style_Pictures/BoxBraids-03.jpg
+#	renamed:    Style_Pictures/BoxBraids-04.jpg -> Searching/Style_Pictures/BoxBraids-04.jpg
+#	renamed:    Style_Pictures/BoxBraids-05.jpg -> Searching/Style_Pictures/BoxBraids-05.jpg
+#	renamed:    Style_Pictures/BoxBraids.jpg -> Searching/Style_Pictures/BoxBraids.jpg
+#	renamed:    Style_Pictures/Braids-Removal.jpg -> Searching/Style_Pictures/Braids-Removal.jpg
+#	renamed:    Style_Pictures/Braids-Styling-01.jpg -> Searching/Style_Pictures/Braids-Styling-01.jpg
+#	renamed:    Style_Pictures/Braids/BoxBraids-02.jpg -> Searching/Style_Pictures/Braids/BoxBraids-02.jpg
+#	new file:   Searching/Style_Pictures/Braids/BoxBraids-03.jpg
+#	renamed:    Style_Pictures/Braids/BoxBraids-04.jpg -> Searching/Style_Pictures/Braids/BoxBraids-04.jpg
+#	renamed:    Style_Pictures/Braids/BoxBraids-05.jpg -> Searching/Style_Pictures/Braids/BoxBraids-05.jpg
+#	renamed:    Style_Pictures/Braids/BoxBraids.jpg -> Searching/Style_Pictures/Braids/BoxBraids.jpg
+#	renamed:    Style_Pictures/Braids/Braids-Styling-01.jpg -> Searching/Style_Pictures/Braids/Braids-Styling-01.jpg
+#	renamed:    Style_Pictures/Braids/Braids_Removal00.jpg -> Searching/Style_Pictures/Braids/Braids_Removal00.jpg
+#	renamed:    Style_Pictures/Braids/Braids_Styling-00.jpg -> Searching/Style_Pictures/Braids/Braids_Styling-00.jpg
+#	renamed:    Style_Pictures/Braids/Braids_Styling.jpg -> Searching/Style_Pictures/Braids/Braids_Styling.jpg
+#	renamed:    Style_Pictures/Braids/Clip_In_or_Clip_On_Hair_Extensions00.jpg -> Searching/Style_Pictures/Braids/Clip_In_or_Clip_On_Hair_Extensions00.jpg
+#	renamed:    Style_Pictures/Braids/Crochet-01.jpg -> Searching/Style_Pictures/Braids/Crochet-01.jpg
+#	renamed:    Style_Pictures/Braids/Crochet-02.jpg -> Searching/Style_Pictures/Braids/Crochet-02.jpg
+#	renamed:    Style_Pictures/Braids/Crochet-03.jpg -> Searching/Style_Pictures/Braids/Crochet-03.jpg
+#	renamed:    Style_Pictures/Braids/Crochet-04.jpeg -> Searching/Style_Pictures/Braids/Crochet-04.jpeg
+#	renamed:    Style_Pictures/Braids/Crochet-05.png -> Searching/Style_Pictures/Braids/Crochet-05.png
+#	renamed:    Style_Pictures/Braids/Crochet-06.jpg -> Searching/Style_Pictures/Braids/Crochet-06.jpg
+#	renamed:    Style_Pictures/Braids/Crochet-07.jpg -> Searching/Style_Pictures/Braids/Crochet-07.jpg
+#	renamed:    Style_Pictures/Braids/Crochet-08.jpg -> Searching/Style_Pictures/Braids/Crochet-08.jpg
+#	renamed:    Style_Pictures/Braids/Crochet.jpg -> Searching/Style_Pictures/Braids/Crochet.jpg
+#	renamed:    Style_Pictures/Braids/Crochet2.jpg -> Searching/Style_Pictures/Braids/Crochet2.jpg
+#	renamed:    Style_Pictures/Braids/Faux-Locs-styling-00.jpe -> Searching/Style_Pictures/Braids/Faux-Locs-styling-00.jpe
+#	renamed:    Style_Pictures/Braids/Faux-Locs-styling-01.jpe -> Searching/Style_Pictures/Braids/Faux-Locs-styling-01.jpe
+#	renamed:    Style_Pictures/Braids/Faux-Locs.jpg -> Searching/Style_Pictures/Braids/Faux-Locs.jpg
+#	renamed:    Style_Pictures/Braids/FauxLocs.jpg -> Searching/Style_Pictures/Braids/FauxLocs.jpg
+#	renamed:    Style_Pictures/Braids/Havana-01.jpg -> Searching/Style_Pictures/Braids/Havana-01.jpg
+#	renamed:    Style_Pictures/Braids/Havana-02.jpg -> Searching/Style_Pictures/Braids/Havana-02.jpg
+#	renamed:    Style_Pictures/Braids/Havana-03.jpeg -> Searching/Style_Pictures/Braids/Havana-03.jpeg
+#	renamed:    Style_Pictures/Braids/Havana-04.jpg -> Searching/Style_Pictures/Braids/Havana-04.jpg
+#	renamed:    Style_Pictures/Braids/Havana-05.jpg -> Searching/Style_Pictures/Braids/Havana-05.jpg
+#	renamed:    Style_Pictures/Braids/Havana-06.jpeg -> Searching/Style_Pictures/Braids/Havana-06.jpeg
+#	renamed:    Style_Pictures/Braids/Havana-07.jpeg -> Searching/Style_Pictures/Braids/Havana-07.jpeg
+#	renamed:    Style_Pictures/Braids/Havana-08.jpg -> Searching/Style_Pictures/Braids/Havana-08.jpg
+#	renamed:    Style_Pictures/Braids/HavanaTwist.jpg -> Searching/Style_Pictures/Braids/HavanaTwist.jpg
+#	renamed:    Style_Pictures/Braids/Havannah00.jpg -> Searching/Style_Pictures/Braids/Havannah00.jpg
+#	renamed:    Style_Pictures/Braids/Havannah01.jpg -> Searching/Style_Pictures/Braids/Havannah01.jpg
+#	renamed:    Style_Pictures/Braids/Havannah02.jpg -> Searching/Style_Pictures/Braids/Havannah02.jpg
+#	renamed:    Style_Pictures/Braids/Single-Twist-01.jpeg -> Searching/Style_Pictures/Braids/Single-Twist-01.jpeg
+#	renamed:    Style_Pictures/Braids/Single-Twist-02.jpeg -> Searching/Style_Pictures/Braids/Single-Twist-02.jpeg
+#	renamed:    Style_Pictures/Braids/Single-Twist-03.jpeg -> Searching/Style_Pictures/Braids/Single-Twist-03.jpeg
+#	renamed:    Style_Pictures/Braids/Single-Twist-04.jpeg -> Searching/Style_Pictures/Braids/Single-Twist-04.jpeg
+#	renamed:    Style_Pictures/Braids/Single-Twist-05.jpg -> Searching/Style_Pictures/Braids/Single-Twist-05.jpg
+#	renamed:    Style_Pictures/Braids/Single-Twist-06.jpeg -> Searching/Style_Pictures/Braids/Single-Twist-06.jpeg
+#	renamed:    Style_Pictures/Braids/Single-Twist-07.jpeg -> Searching/Style_Pictures/Braids/Single-Twist-07.jpeg
+#	renamed:    Style_Pictures/Braids/Single_Twist00.jpg -> Searching/Style_Pictures/Braids/Single_Twist00.jpg
+#	renamed:    Style_Pictures/Braids/Single_Twist01.jpg -> Searching/Style_Pictures/Braids/Single_Twist01.jpg
+#	renamed:    Style_Pictures/Braids/faux-Locs-01.jpeg -> Searching/Style_Pictures/Braids/faux-Locs-01.jpeg
+#	renamed:    Style_Pictures/Braids/faux-Locs-02.jpg -> Searching/Style_Pictures/Braids/faux-Locs-02.jpg
+#	renamed:    Style_Pictures/Braids/faux-Locs-03.jpg -> Searching/Style_Pictures/Braids/faux-Locs-03.jpg
+#	renamed:    Style_Pictures/Braids/faux-Locs-04.jpg -> Searching/Style_Pictures/Braids/faux-Locs-04.jpg
+#	renamed:    Style_Pictures/Braids/faux-Locs-05.jpg -> Searching/Style_Pictures/Braids/faux-Locs-05.jpg
+#	renamed:    Style_Pictures/Braids/faux-Locs-06.jpeg -> Searching/Style_Pictures/Braids/faux-Locs-06.jpeg
+#	renamed:    Style_Pictures/Braids/faux-Locs-07.jpg -> Searching/Style_Pictures/Braids/faux-Locs-07.jpg
+#	renamed:    Style_Pictures/Braids_Removal00.jpg -> Searching/Style_Pictures/Braids_Removal00.jpg
+#	renamed:    Style_Pictures/Braids_Styling-00.jpg -> Searching/Style_Pictures/Braids_Styling-00.jpg
+#	renamed:    Style_Pictures/Braids_Styling.jpg -> Searching/Style_Pictures/Braids_Styling.jpg
+#	renamed:    Style_Pictures/Brazilian-01.jpg -> Searching/Style_Pictures/Brazilian-01.jpg
+#	renamed:    Style_Pictures/Brazilian-02.jpg -> Searching/Style_Pictures/Brazilian-02.jpg
+#	renamed:    Style_Pictures/Brazilian-03.jpg -> Searching/Style_Pictures/Brazilian-03.jpg
+#	renamed:    Style_Pictures/Brazilian-04.jpg -> Searching/Style_Pictures/Brazilian-04.jpg
+#	renamed:    Style_Pictures/Brazilian-05.jpg -> Searching/Style_Pictures/Brazilian-05.jpg
+#	renamed:    Style_Pictures/Brazilian-06.jpg -> Searching/Style_Pictures/Brazilian-06.jpg
+#	renamed:    Style_Pictures/Brazilian-07.jpeg -> Searching/Style_Pictures/Brazilian-07.jpeg
+#	renamed:    Style_Pictures/Brazilian_Weave00.jpg -> Searching/Style_Pictures/Brazilian_Weave00.jpg
+#	renamed:    Style_Pictures/Brazilian_Weave01.jpg -> Searching/Style_Pictures/Brazilian_Weave01.jpg
+#	renamed:    Style_Pictures/Brazilian_Weave02.jpg -> Searching/Style_Pictures/Brazilian_Weave02.jpg
+#	renamed:    Style_Pictures/Brush-00.jpg -> Searching/Style_Pictures/Brush-00.jpg
+#	renamed:    Style_Pictures/Brush-01.jpe -> Searching/Style_Pictures/Brush-01.jpe
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Dye_and_Highlights00.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Dye_and_Highlights00.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Dye_and_Highlights01.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Dye_and_Highlights01.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Dye_and_Highlights02.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Dye_and_Highlights02.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Dye_and_Highlights03.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Dye_and_Highlights03.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-01.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-02.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-02.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-03.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-03.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-04.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-04.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-05.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-05.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-06.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-06.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Dye-07.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Dye-07.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Relax-01.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Relax-01.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Relax-02.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Relax-02.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Relax-03.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Relax-03.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Wash-01.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Wash-01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Wash-02.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Wash-02.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Wash-and-Blow-01.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Wash-and-Blow-01.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair-Wash-and-Blow-02.jpeg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair-Wash-and-Blow-02.jpeg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Relaxing00.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Relaxing00.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Relaxing01.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Relaxing01.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Relaxing02.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Relaxing02.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Wash01.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Wash01.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Wash02.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Wash02.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Wash03.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Wash03.jpg
+#	renamed:    Style_Pictures/Chemicals and Hair Wash/Hair_Wash_and_Blow00.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/Hair_Wash_and_Blow00.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-01.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-02.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-02.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-03.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-03.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-04.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-04.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-05.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-05.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-06.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-06.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/S-curl-07.jpg -> Searching/Style_Pictures/Chemicals-and-Hair-Wash/S-curl-07.jpg
+#	renamed:    Style_Pictures/Chiskop-01.jpeg -> Searching/Style_Pictures/Chiskop-01.jpeg
+#	renamed:    Style_Pictures/Chiskop-02.jpg -> Searching/Style_Pictures/Chiskop-02.jpg
+#	renamed:    Style_Pictures/Chiskop-03.jpg -> Searching/Style_Pictures/Chiskop-03.jpg
+#	renamed:    Style_Pictures/Chiskop-04.jpeg -> Searching/Style_Pictures/Chiskop-04.jpeg
+#	renamed:    Style_Pictures/Chiskop-05.jpg -> Searching/Style_Pictures/Chiskop-05.jpg
+#	renamed:    Style_Pictures/Chiskop-06.jpg -> Searching/Style_Pictures/Chiskop-06.jpg
+#	renamed:    Style_Pictures/Chiskop-07.jpg -> Searching/Style_Pictures/Chiskop-07.jpg
+#	renamed:    Style_Pictures/Chiskop-08.jpeg -> Searching/Style_Pictures/Chiskop-08.jpeg
+#	renamed:    Style_Pictures/Chiskop.jpg -> Searching/Style_Pictures/Chiskop.jpg
+#	renamed:    Style_Pictures/Clip-In-01.jpeg -> Searching/Style_Pictures/Clip-In-01.jpeg
+#	renamed:    Style_Pictures/Clip-In-02.jpg -> Searching/Style_Pictures/Clip-In-02.jpg
+#	renamed:    Style_Pictures/Clip-In-03.jpg -> Searching/Style_Pictures/Clip-In-03.jpg
+#	renamed:    Style_Pictures/Clip-In-04.jpg -> Searching/Style_Pictures/Clip-In-04.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-05.jpeg -> Searching/Style_Pictures/Clip-In-05.jpeg
+#	renamed:    Style_Pictures/Clip-In-06.jpg -> Searching/Style_Pictures/Clip-In-06.jpg
+#	renamed:    Style_Pictures/Clip-In-07.jpg -> Searching/Style_Pictures/Clip-In-07.jpg
+#	renamed:    Style_Pictures/Clip_In_or_Clip_On_Hair_Extensions00.jpg -> Searching/Style_Pictures/Clip_In_or_Clip_On_Hair_Extensions00.jpg
+#	renamed:    Style_Pictures/Clip_In_or_Clip_On_Hair_Extensions01.jpg -> Searching/Style_Pictures/Clip_In_or_Clip_On_Hair_Extensions01.jpg
+#	renamed:    Style_Pictures/Clip_In_or_Clip_On_Hair_Extensions02.jpg -> Searching/Style_Pictures/Clip_In_or_Clip_On_Hair_Extensions02.jpg
+#	renamed:    Style_Pictures/Cornrows-01.jpg -> Searching/Style_Pictures/Cornrows-01.jpg
+#	renamed:    Style_Pictures/Cornrows-02.jpg -> Searching/Style_Pictures/Cornrows-02.jpg
+#	renamed:    Style_Pictures/Cornrows-03.jpeg -> Searching/Style_Pictures/Cornrows-03.jpeg
+#	renamed:    Style_Pictures/Cornrows-04.jpeg -> Searching/Style_Pictures/Cornrows-04.jpeg
+#	renamed:    Style_Pictures/Cornrows-05.jpeg -> Searching/Style_Pictures/Cornrows-05.jpeg
+#	renamed:    Style_Pictures/Cornrows-06.jpeg -> Searching/Style_Pictures/Cornrows-06.jpeg
+#	renamed:    Style_Pictures/Cornrows-07.jpg -> Searching/Style_Pictures/Cornrows-07.jpg
+#	renamed:    Style_Pictures/Cornrows-08.jpeg -> Searching/Style_Pictures/Cornrows-08.jpeg
+#	renamed:    Style_Pictures/Cornrows.jpg -> Searching/Style_Pictures/Cornrows.jpg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-01.jpg -> Searching/Style_Pictures/Cornrows/Cornrows-01.jpg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-02.jpg -> Searching/Style_Pictures/Cornrows/Cornrows-02.jpg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-03.jpeg -> Searching/Style_Pictures/Cornrows/Cornrows-03.jpeg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-04.jpeg -> Searching/Style_Pictures/Cornrows/Cornrows-04.jpeg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-05.jpeg -> Searching/Style_Pictures/Cornrows/Cornrows-05.jpeg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-06.jpeg -> Searching/Style_Pictures/Cornrows/Cornrows-06.jpeg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-07.jpg -> Searching/Style_Pictures/Cornrows/Cornrows-07.jpg
+#	renamed:    Style_Pictures/Cornrows/Cornrows-08.jpeg -> Searching/Style_Pictures/Cornrows/Cornrows-08.jpeg
+#	renamed:    Style_Pictures/Cornrows/Cornrows.jpg -> Searching/Style_Pictures/Cornrows/Cornrows.jpg
+#	renamed:    Style_Pictures/Cornrows/Cornrows2.jpg -> Searching/Style_Pictures/Cornrows/Cornrows2.jpg
+#	renamed:    Style_Pictures/Cornrows/Cornrows3.jpg -> Searching/Style_Pictures/Cornrows/Cornrows3.jpg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-01.jpg -> Searching/Style_Pictures/Cornrows/Straight-Back-01.jpg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-02.jpg -> Searching/Style_Pictures/Cornrows/Straight-Back-02.jpg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-03.jpg -> Searching/Style_Pictures/Cornrows/Straight-Back-03.jpg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-04.jpg -> Searching/Style_Pictures/Cornrows/Straight-Back-04.jpg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-05.jpg -> Searching/Style_Pictures/Cornrows/Straight-Back-05.jpg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-06.jpeg -> Searching/Style_Pictures/Cornrows/Straight-Back-06.jpeg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-07.jpeg -> Searching/Style_Pictures/Cornrows/Straight-Back-07.jpeg
+#	renamed:    Style_Pictures/Cornrows/Straight-Back-08.jpeg -> Searching/Style_Pictures/Cornrows/Straight-Back-08.jpeg
+#	renamed:    Style_Pictures/Cornrows/StraightBack.jpg -> Searching/Style_Pictures/Cornrows/StraightBack.jpg
+#	renamed:    Style_Pictures/Cornrows2.jpg -> Searching/Style_Pictures/Cornrows2.jpg
+#	renamed:    Style_Pictures/Cornrows3.jpg -> Searching/Style_Pictures/Cornrows3.jpg
+#	renamed:    Style_Pictures/Crochet-01.jpg -> Searching/Style_Pictures/Crochet-01.jpg
+#	renamed:    Style_Pictures/Crochet-02.jpg -> Searching/Style_Pictures/Crochet-02.jpg
+#	renamed:    Style_Pictures/Crochet-03.jpg -> Searching/Style_Pictures/Crochet-03.jpg
+#	renamed:    Style_Pictures/Crochet-04.jpeg -> Searching/Style_Pictures/Crochet-04.jpeg
+#	renamed:    Style_Pictures/Crochet-05.png -> Searching/Style_Pictures/Crochet-05.png
+#	renamed:    Style_Pictures/Crochet-06.jpg -> Searching/Style_Pictures/Crochet-06.jpg
+#	renamed:    Style_Pictures/Crochet-07.jpg -> Searching/Style_Pictures/Crochet-07.jpg
+#	renamed:    Style_Pictures/Crochet-08.jpg -> Searching/Style_Pictures/Crochet-08.jpg
+#	renamed:    Style_Pictures/Crochet.jpg -> Searching/Style_Pictures/Crochet.jpg
+#	renamed:    Style_Pictures/Crochet2.jpg -> Searching/Style_Pictures/Crochet2.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-00.jpe -> Searching/Style_Pictures/Cut-and_Style-00.jpe
+#	renamed:    Style_Pictures/Cut-and_Style-01.jpg -> Searching/Style_Pictures/Cut-and_Style-01.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-02.jpg -> Searching/Style_Pictures/Cut-and_Style-02.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-03.jpg -> Searching/Style_Pictures/Cut-and_Style-03.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-04.jpg -> Searching/Style_Pictures/Cut-and_Style-04.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-05.jpg -> Searching/Style_Pictures/Cut-and_Style-05.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-06.jpg -> Searching/Style_Pictures/Cut-and_Style-06.jpg
+#	renamed:    Style_Pictures/Cut-and_Style-07.jpeg -> Searching/Style_Pictures/Cut-and_Style-07.jpeg
+#	renamed:    Style_Pictures/Cut-and_Style-08.jpg -> Searching/Style_Pictures/Cut-and_Style-08.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-01.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-01.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-02.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-02.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-022.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-022.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-03.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-03.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-04.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-04.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-044.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-044.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-05.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-05.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-055.jpeg -> Searching/Style_Pictures/Dreadlocks-Braiding-055.jpeg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-06.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-06.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-07.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-07.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-08.jpg -> Searching/Style_Pictures/Dreadlocks-Braiding-08.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Braiding-09.jpeg -> Searching/Style_Pictures/Dreadlocks-Braiding-09.jpeg
+#	renamed:    Style_Pictures/Dreadlocks-Waxing-01.jpeg -> Searching/Style_Pictures/Dreadlocks-Waxing-01.jpeg
+#	renamed:    Style_Pictures/Dreadlocks-Waxing-02.jpg -> Searching/Style_Pictures/Dreadlocks-Waxing-02.jpg
+#	renamed:    Style_Pictures/Dreadlocks-Waxing-03.jpeg -> Searching/Style_Pictures/Dreadlocks-Waxing-03.jpeg
+#	renamed:    Style_Pictures/Dreadlocks-Waxing-04.png -> Searching/Style_Pictures/Dreadlocks-Waxing-04.png
+#	renamed:    Style_Pictures/Dreadlocks-Waxing-05.jpeg -> Searching/Style_Pictures/Dreadlocks-Waxing-05.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-06.jpeg -> Searching/Style_Pictures/Dreadlocks-Waxing-06.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-07.jpg -> Searching/Style_Pictures/Dreadlocks-Waxing-07.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-08.jpg -> Searching/Style_Pictures/Dreadlocks-Waxing-08.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-01.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-01.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-02.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-02.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-022.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-022.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-03.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-03.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-04.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-04.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-044.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-044.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-05.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-05.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-055.jpeg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-055.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-06.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-06.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-07.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-07.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-08.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-08.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Braiding-09.jpeg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Braiding-09.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-01.jpeg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-01.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-02.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-02.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-03.jpeg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-03.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-04.png -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-04.png
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks-Waxing-05.jpeg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-05.jpeg
+#	new file:   Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-06.jpeg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks_Waxing00.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-07.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks_Waxing01.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks-Waxing-08.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks_Braiding00.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks_Braiding00.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks_Braiding01.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks_Braiding01.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks_Braiding02.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks_Braiding02.jpg
+#	renamed:    Style_Pictures/Dreadlocks/Dreadlocks_Braiding03.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks_Braiding03.jpg
+#	renamed:    Style_Pictures/Dreadlocks_Waxing00.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks_Waxing00.jpg
+#	renamed:    Style_Pictures/Dreadlocks_Waxing01.jpg -> Searching/Style_Pictures/Dreadlocks/Dreadlocks_Waxing01.jpg
+#	renamed:    Style_Pictures/Dreadlocks_Braiding00.jpg -> Searching/Style_Pictures/Dreadlocks_Braiding00.jpg
+#	renamed:    Style_Pictures/Dreadlocks_Braiding01.jpg -> Searching/Style_Pictures/Dreadlocks_Braiding01.jpg
+#	renamed:    Style_Pictures/Dreadlocks_Braiding02.jpg -> Searching/Style_Pictures/Dreadlocks_Braiding02.jpg
+#	renamed:    Style_Pictures/Dreadlocks_Braiding03.jpg -> Searching/Style_Pictures/Dreadlocks_Braiding03.jpg
+#	new file:   Searching/Style_Pictures/Dreadlocks_Waxing00.jpg
+#	new file:   Searching/Style_Pictures/Dreadlocks_Waxing01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Dye_and_Highlights00.jpg -> Searching/Style_Pictures/Dye_and_Highlights00.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Dye_and_Highlights01.jpg -> Searching/Style_Pictures/Dye_and_Highlights01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Dye_and_Highlights02.jpg -> Searching/Style_Pictures/Dye_and_Highlights02.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Dye_and_Highlights03.jpg -> Searching/Style_Pictures/Dye_and_Highlights03.jpg
+#	renamed:    Style_Pictures/Fade-01.jpg -> Searching/Style_Pictures/Fade-01.jpg
+#	renamed:    Style_Pictures/Fade-02.jpeg -> Searching/Style_Pictures/Fade-02.jpeg
+#	renamed:    Style_Pictures/Fade-03.jpg -> Searching/Style_Pictures/Fade-03.jpg
+#	renamed:    Style_Pictures/Fade-04.jpeg -> Searching/Style_Pictures/Fade-04.jpeg
+#	renamed:    Style_Pictures/Fade-05.jpeg -> Searching/Style_Pictures/Fade-05.jpeg
+#	renamed:    Style_Pictures/Fade-06.jpeg -> Searching/Style_Pictures/Fade-06.jpeg
+#	renamed:    Style_Pictures/Fade-07.jpg -> Searching/Style_Pictures/Fade-07.jpg
+#	renamed:    Style_Pictures/Fade-08.jpg -> Searching/Style_Pictures/Fade-08.jpg
+#	renamed:    Style_Pictures/Fade.jpg -> Searching/Style_Pictures/Fade.jpg
+#	renamed:    Style_Pictures/Fade2.jpg -> Searching/Style_Pictures/Fade2.jpg
+#	renamed:    Style_Pictures/Faux-Locs-styling-00.jpe -> Searching/Style_Pictures/Faux-Locs-styling-00.jpe
+#	renamed:    Style_Pictures/Faux-Locs-styling-01.jpe -> Searching/Style_Pictures/Faux-Locs-styling-01.jpe
+#	renamed:    Style_Pictures/Faux-Locs.jpg -> Searching/Style_Pictures/Faux-Locs.jpg
+#	renamed:    Style_Pictures/FauxLocs.jpg -> Searching/Style_Pictures/FauxLocs.jpg
+#	renamed:    Style_Pictures/Fine-Cut-01.jpg -> Searching/Style_Pictures/Fine-Cut-01.jpg
+#	renamed:    Style_Pictures/Fine-Cut-02.jpg -> Searching/Style_Pictures/Fine-Cut-02.jpg
+#	renamed:    Style_Pictures/Fine-Cut-03.jpg -> Searching/Style_Pictures/Fine-Cut-03.jpg
+#	renamed:    Style_Pictures/Fine-Cut-04.jpg -> Searching/Style_Pictures/Fine-Cut-04.jpg
+#	renamed:    Style_Pictures/Fine-Cut-05.jpg -> Searching/Style_Pictures/Fine-Cut-05.jpg
+#	renamed:    Style_Pictures/Fine-Cut-06.jpg -> Searching/Style_Pictures/Fine-Cut-06.jpg
+#	renamed:    Style_Pictures/Fine-Cut-07.jpg -> Searching/Style_Pictures/Fine-Cut-07.jpg
+#	renamed:    Style_Pictures/Fine-Cut-08.jpeg -> Searching/Style_Pictures/Fine-Cut-08.jpeg
+#	renamed:    Style_Pictures/FineCut.jpg -> Searching/Style_Pictures/FineCut.jpg
+#	renamed:    Style_Pictures/FineCut2.jpg -> Searching/Style_Pictures/FineCut2.jpg
+#	renamed:    Style_Pictures/Front-lace-01.jpg -> Searching/Style_Pictures/Front-lace-01.jpg
+#	renamed:    Style_Pictures/Front-lace-02.jpg -> Searching/Style_Pictures/Front-lace-02.jpg
+#	renamed:    Style_Pictures/Front-lace-03.jpg -> Searching/Style_Pictures/Front-lace-03.jpg
+#	renamed:    Style_Pictures/Front-lace-04.jpeg -> Searching/Style_Pictures/Front-lace-04.jpeg
+#	renamed:    Style_Pictures/Front-lace-05.jpg -> Searching/Style_Pictures/Front-lace-05.jpg
+#	renamed:    Style_Pictures/Front-lace-06.jpg -> Searching/Style_Pictures/Front-lace-06.jpg
+#	renamed:    Style_Pictures/Front-lace-07.jpeg -> Searching/Style_Pictures/Front-lace-07.jpeg
+#	renamed:    Style_Pictures/Front_Lace_Closure00.jpg -> Searching/Style_Pictures/Front_Lace_Closure00.jpg
+#	renamed:    Style_Pictures/Front_Lace_Closure01.jpg -> Searching/Style_Pictures/Front_Lace_Closure01.jpg
+#	renamed:    Style_Pictures/Full-lace-01.jpg -> Searching/Style_Pictures/Full-lace-01.jpg
+#	renamed:    Style_Pictures/Full-lace-02.jpg -> Searching/Style_Pictures/Full-lace-02.jpg
+#	renamed:    Style_Pictures/Full-lace-03.jpg -> Searching/Style_Pictures/Full-lace-03.jpg
+#	renamed:    Style_Pictures/Full-lace-04.jpg -> Searching/Style_Pictures/Full-lace-04.jpg
+#	renamed:    Style_Pictures/Full-lace-05.jpeg -> Searching/Style_Pictures/Full-lace-05.jpeg
+#	renamed:    Style_Pictures/Full-lace-06.jpeg -> Searching/Style_Pictures/Full-lace-06.jpeg
+#	renamed:    Style_Pictures/Full-lace-07.jpeg -> Searching/Style_Pictures/Full-lace-07.jpeg
+#	renamed:    Style_Pictures/Full-lace-08.jpg -> Searching/Style_Pictures/Full-lace-08.jpg
+#	renamed:    Style_Pictures/Full_lace_wigs00.jpg -> Searching/Style_Pictures/Full_lace_wigs00.jpg
+#	renamed:    Style_Pictures/Full_lace_wigs01.jpg -> Searching/Style_Pictures/Full_lace_wigs01.jpg
+#	renamed:    Style_Pictures/Full_lace_wigs02.jpg -> Searching/Style_Pictures/Full_lace_wigs02.jpg
+#	renamed:    Style_Pictures/Fusion-01.jpeg -> Searching/Style_Pictures/Fusion-01.jpeg
+#	renamed:    Style_Pictures/Fusion-02.jpeg -> Searching/Style_Pictures/Fusion-02.jpeg
+#	renamed:    Style_Pictures/Fusion-03.jpg -> Searching/Style_Pictures/Fusion-03.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-04.jpg -> Searching/Style_Pictures/Fusion-04.jpg
+#	renamed:    Style_Pictures/Fusion-05.jpg -> Searching/Style_Pictures/Fusion-05.jpg
+#	renamed:    Style_Pictures/Fusion-06.jpg -> Searching/Style_Pictures/Fusion-06.jpg
+#	renamed:    Style_Pictures/Fusion-07.jpg -> Searching/Style_Pictures/Fusion-07.jpg
+#	renamed:    Style_Pictures/Fusion-08.jpeg -> Searching/Style_Pictures/Fusion-08.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Braids-Removal.jpg -> Searching/Style_Pictures/Hair-Cut/Braids-Removal.jpg
+#	renamed:    Style_Pictures/Hair Cut/Brush-00.jpg -> Searching/Style_Pictures/Hair-Cut/Brush-00.jpg
+#	renamed:    Style_Pictures/Hair Cut/Brush-01.jpe -> Searching/Style_Pictures/Hair-Cut/Brush-01.jpe
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-01.jpeg -> Searching/Style_Pictures/Hair-Cut/Chiskop-01.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-02.jpg -> Searching/Style_Pictures/Hair-Cut/Chiskop-02.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-03.jpg -> Searching/Style_Pictures/Hair-Cut/Chiskop-03.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-04.jpeg -> Searching/Style_Pictures/Hair-Cut/Chiskop-04.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-05.jpg -> Searching/Style_Pictures/Hair-Cut/Chiskop-05.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-06.jpg -> Searching/Style_Pictures/Hair-Cut/Chiskop-06.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-07.jpg -> Searching/Style_Pictures/Hair-Cut/Chiskop-07.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Chiskop-08.jpeg -> Searching/Style_Pictures/Hair-Cut/Chiskop-08.jpeg
+#	renamed:    Style_Pictures/Hair Cut/Chiskop.jpg -> Searching/Style_Pictures/Hair-Cut/Chiskop.jpg
+#	renamed:    Style_Pictures/Hair Cut/Cut-and_Style-00.jpe -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-00.jpe
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-01.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-01.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-02.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-02.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-03.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-03.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-04.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-04.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-05.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-05.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-06.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-06.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-07.jpeg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-07.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Cut-and_Style-08.jpg -> Searching/Style_Pictures/Hair-Cut/Cut-and_Style-08.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-01.jpg -> Searching/Style_Pictures/Hair-Cut/Fade-01.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-02.jpeg -> Searching/Style_Pictures/Hair-Cut/Fade-02.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-03.jpg -> Searching/Style_Pictures/Hair-Cut/Fade-03.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-04.jpeg -> Searching/Style_Pictures/Hair-Cut/Fade-04.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-05.jpeg -> Searching/Style_Pictures/Hair-Cut/Fade-05.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-06.jpeg -> Searching/Style_Pictures/Hair-Cut/Fade-06.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-07.jpg -> Searching/Style_Pictures/Hair-Cut/Fade-07.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fade-08.jpg -> Searching/Style_Pictures/Hair-Cut/Fade-08.jpg
+#	renamed:    Style_Pictures/Hair Cut/Fade.jpg -> Searching/Style_Pictures/Hair-Cut/Fade.jpg
+#	renamed:    Style_Pictures/Hair Cut/Fade2.jpg -> Searching/Style_Pictures/Hair-Cut/Fade2.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-01.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-01.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-02.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-02.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-03.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-03.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-04.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-04.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-05.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-05.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-06.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-06.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-07.jpg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-07.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Fine-Cut-08.jpeg -> Searching/Style_Pictures/Hair-Cut/Fine-Cut-08.jpeg
+#	renamed:    Style_Pictures/Hair Cut/FineCut.jpg -> Searching/Style_Pictures/Hair-Cut/FineCut.jpg
+#	renamed:    Style_Pictures/Hair Cut/FineCut2.jpg -> Searching/Style_Pictures/Hair-Cut/FineCut2.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-01.jpg -> Searching/Style_Pictures/Hair-Cut/Mohawk-01.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-02.jpg -> Searching/Style_Pictures/Hair-Cut/Mohawk-02.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-03.jpg -> Searching/Style_Pictures/Hair-Cut/Mohawk-03.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-04.jpeg -> Searching/Style_Pictures/Hair-Cut/Mohawk-04.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-05.jpg -> Searching/Style_Pictures/Hair-Cut/Mohawk-05.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-06.jpg -> Searching/Style_Pictures/Hair-Cut/Mohawk-06.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk-07.jpeg -> Searching/Style_Pictures/Hair-Cut/Mohawk-07.jpeg
+#	renamed:    Style_Pictures/Hair Cut/Mohawk.jpg -> Searching/Style_Pictures/Hair-Cut/Mohawk.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave-01.jpeg -> Searching/Style_Pictures/Hair-Cut/Shave-01.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave-02.jpg -> Searching/Style_Pictures/Hair-Cut/Shave-02.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave-03.jpeg -> Searching/Style_Pictures/Hair-Cut/Shave-03.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave-05.jpg -> Searching/Style_Pictures/Hair-Cut/Shave-05.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave-06.jpeg -> Searching/Style_Pictures/Hair-Cut/Shave-06.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave-07.jpeg -> Searching/Style_Pictures/Hair-Cut/Shave-07.jpeg
+#	renamed:    Style_Pictures/Hair Cut/Shave.jpg -> Searching/Style_Pictures/Hair-Cut/Shave.jpg
+#	renamed:    Style_Pictures/Hair Cut/Trim-00.jpe -> Searching/Style_Pictures/Hair-Cut/Trim-00.jpe
+#	renamed:    Style_Pictures/Hair Cut/Trim-01.jpe -> Searching/Style_Pictures/Hair-Cut/Trim-01.jpe
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-01.jpeg -> Searching/Style_Pictures/Hair-Cut/Trim-01.jpeg
+#	renamed:    Style_Pictures/Hair Cut/Trim-02.jpe -> Searching/Style_Pictures/Hair-Cut/Trim-02.jpe
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-02.jpg -> Searching/Style_Pictures/Hair-Cut/Trim-02.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-03.jpeg -> Searching/Style_Pictures/Hair-Cut/Trim-03.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-04.jpeg -> Searching/Style_Pictures/Hair-Cut/Trim-04.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-05.jpeg -> Searching/Style_Pictures/Hair-Cut/Trim-05.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-06.jpg -> Searching/Style_Pictures/Hair-Cut/Trim-06.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-07.jpeg -> Searching/Style_Pictures/Hair-Cut/Trim-07.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-08.jpg -> Searching/Style_Pictures/Hair-Cut/Trim-08.jpg
+#	renamed:    Style_Pictures/Hair-Dye-01.jpg -> Searching/Style_Pictures/Hair-Dye-01.jpg
+#	renamed:    Style_Pictures/Hair-Dye-02.jpeg -> Searching/Style_Pictures/Hair-Dye-02.jpeg
+#	renamed:    Style_Pictures/Hair-Dye-03.jpg -> Searching/Style_Pictures/Hair-Dye-03.jpg
+#	renamed:    Style_Pictures/Hair-Dye-04.jpeg -> Searching/Style_Pictures/Hair-Dye-04.jpeg
+#	renamed:    Style_Pictures/Hair-Dye-05.jpg -> Searching/Style_Pictures/Hair-Dye-05.jpg
+#	renamed:    Style_Pictures/Hair-Dye-06.jpeg -> Searching/Style_Pictures/Hair-Dye-06.jpeg
+#	renamed:    Style_Pictures/Hair-Dye-07.jpeg -> Searching/Style_Pictures/Hair-Dye-07.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Bonding-01.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding-01.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Bonding-02.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding-02.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Bonding-03.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding-03.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Bonding-04.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding-04.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Bonding-05.jpeg -> Searching/Style_Pictures/Hair-Extensions/Bonding-05.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Bonding-06.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding-06.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Bonding_and_sealing_extensions00.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding_and_sealing_extensions00.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Bonding_and_sealing_extensions01.jpg -> Searching/Style_Pictures/Hair-Extensions/Bonding_and_sealing_extensions01.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-01.jpeg -> Searching/Style_Pictures/Hair-Extensions/Clip-In-01.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-02.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip-In-02.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-03.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip-In-03.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-04.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip-In-04.jpg
+#	new file:   Searching/Style_Pictures/Hair-Extensions/Clip-In-05.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-06.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip-In-06.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip-In-07.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip-In-07.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Clip_In_or_Clip_On_Hair_Extensions00.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip_In_or_Clip_On_Hair_Extensions00.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Clip_In_or_Clip_On_Hair_Extensions01.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip_In_or_Clip_On_Hair_Extensions01.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Clip_In_or_Clip_On_Hair_Extensions02.jpg -> Searching/Style_Pictures/Hair-Extensions/Clip_In_or_Clip_On_Hair_Extensions02.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-01.jpeg -> Searching/Style_Pictures/Hair-Extensions/Fusion-01.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-02.jpeg -> Searching/Style_Pictures/Hair-Extensions/Fusion-02.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-03.jpg -> Searching/Style_Pictures/Hair-Extensions/Fusion-03.jpg
+#	new file:   Searching/Style_Pictures/Hair-Extensions/Fusion-04.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-05.jpg -> Searching/Style_Pictures/Hair-Extensions/Fusion-05.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-06.jpg -> Searching/Style_Pictures/Hair-Extensions/Fusion-06.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-07.jpg -> Searching/Style_Pictures/Hair-Extensions/Fusion-07.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Fusion-08.jpeg -> Searching/Style_Pictures/Hair-Extensions/Fusion-08.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-01.jpg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-01.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-02.JPG -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-02.JPG
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-03.jpg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-03.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-04.jpg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-04.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-05.jpeg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-05.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-06.jpeg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-06.jpeg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-07.jpg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-07.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Hidden-Crown-08.jpg -> Searching/Style_Pictures/Hair-Extensions/Hidden-Crown-08.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Tape_In_Extensions00.jpg -> Searching/Style_Pictures/Hair-Extensions/Tape_In_Extensions00.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Tape_In_Extensions01.jpg -> Searching/Style_Pictures/Hair-Extensions/Tape_In_Extensions01.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Weave_and_Track_Extenstion00.jpg -> Searching/Style_Pictures/Hair-Extensions/Weave_and_Track_Extenstion00.jpg
+#	renamed:    Style_Pictures/Hair Extensions/Weave_and_Track_Extenstion01.jpg -> Searching/Style_Pictures/Hair-Extensions/Weave_and_Track_Extenstion01.jpg
+#	renamed:    Style_Pictures/Hair Extensions/fusion_extension00.jpg -> Searching/Style_Pictures/Hair-Extensions/fusion_extension00.jpg
+#	renamed:    Style_Pictures/Hair Extensions/fusion_extension01.jpg -> Searching/Style_Pictures/Hair-Extensions/fusion_extension01.jpg
+#	renamed:    Style_Pictures/Hair Extensions/fusion_extension02.jpg -> Searching/Style_Pictures/Hair-Extensions/fusion_extension02.jpg
+#	renamed:    Style_Pictures/Hair Extensions/fusion_extension03.jpg -> Searching/Style_Pictures/Hair-Extensions/fusion_extension03.jpg
+#	renamed:    Style_Pictures/Hair-Relax-01.jpeg -> Searching/Style_Pictures/Hair-Relax-01.jpeg
+#	renamed:    Style_Pictures/Hair-Relax-02.jpg -> Searching/Style_Pictures/Hair-Relax-02.jpg
+#	renamed:    Style_Pictures/Hair-Relax-03.jpg -> Searching/Style_Pictures/Hair-Relax-03.jpg
+#	renamed:    Style_Pictures/Hair-Wash-01.jpg -> Searching/Style_Pictures/Hair-Wash-01.jpg
+#	renamed:    Style_Pictures/Hair-Wash-02.jpg -> Searching/Style_Pictures/Hair-Wash-02.jpg
+#	renamed:    Style_Pictures/Hair-Wash-and-Blow-01.jpeg -> Searching/Style_Pictures/Hair-Wash-and-Blow-01.jpeg
+#	renamed:    Style_Pictures/Hair-Wash-and-Blow-02.jpeg -> Searching/Style_Pictures/Hair-Wash-and-Blow-02.jpeg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Relaxing00.jpg -> Searching/Style_Pictures/Hair_Relaxing00.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Relaxing01.jpg -> Searching/Style_Pictures/Hair_Relaxing01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Relaxing02.jpg -> Searching/Style_Pictures/Hair_Relaxing02.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Wash01.jpg -> Searching/Style_Pictures/Hair_Wash01.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Wash02.jpg -> Searching/Style_Pictures/Hair_Wash02.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Wash03.jpg -> Searching/Style_Pictures/Hair_Wash03.jpg
+#	renamed:    Style_Pictures/Chemicals%20and%20Hair%20Wash/Hair_Wash_and_Blow00.jpg -> Searching/Style_Pictures/Hair_Wash_and_Blow00.jpg
+#	renamed:    Style_Pictures/Havana-01.jpg -> Searching/Style_Pictures/Havana-01.jpg
+#	renamed:    Style_Pictures/Havana-02.jpg -> Searching/Style_Pictures/Havana-02.jpg
+#	renamed:    Style_Pictures/Havana-03.jpeg -> Searching/Style_Pictures/Havana-03.jpeg
+#	renamed:    Style_Pictures/Havana-04.jpg -> Searching/Style_Pictures/Havana-04.jpg
+#	renamed:    Style_Pictures/Havana-05.jpg -> Searching/Style_Pictures/Havana-05.jpg
+#	renamed:    Style_Pictures/Havana-06.jpeg -> Searching/Style_Pictures/Havana-06.jpeg
+#	renamed:    Style_Pictures/Havana-07.jpeg -> Searching/Style_Pictures/Havana-07.jpeg
+#	renamed:    Style_Pictures/Havana-08.jpg -> Searching/Style_Pictures/Havana-08.jpg
+#	renamed:    Style_Pictures/HavanaTwist.jpg -> Searching/Style_Pictures/HavanaTwist.jpg
+#	renamed:    Style_Pictures/Havannah00.jpg -> Searching/Style_Pictures/Havannah00.jpg
+#	renamed:    Style_Pictures/Havannah01.jpg -> Searching/Style_Pictures/Havannah01.jpg
+#	renamed:    Style_Pictures/Havannah02.jpg -> Searching/Style_Pictures/Havannah02.jpg
+#	renamed:    Style_Pictures/Hidden-Crown-01.jpg -> Searching/Style_Pictures/Hidden-Crown-01.jpg
+#	renamed:    Style_Pictures/Hidden-Crown-02.JPG -> Searching/Style_Pictures/Hidden-Crown-02.JPG
+#	renamed:    Style_Pictures/Hidden-Crown-03.jpg -> Searching/Style_Pictures/Hidden-Crown-03.jpg
+#	renamed:    Style_Pictures/Hidden-Crown-04.jpg -> Searching/Style_Pictures/Hidden-Crown-04.jpg
+#	renamed:    Style_Pictures/Hidden-Crown-05.jpeg -> Searching/Style_Pictures/Hidden-Crown-05.jpeg
+#	renamed:    Style_Pictures/Hidden-Crown-06.jpeg -> Searching/Style_Pictures/Hidden-Crown-06.jpeg
+#	renamed:    Style_Pictures/Hidden-Crown-07.jpg -> Searching/Style_Pictures/Hidden-Crown-07.jpg
+#	renamed:    Style_Pictures/Hidden-Crown-08.jpg -> Searching/Style_Pictures/Hidden-Crown-08.jpg
+#	renamed:    Style_Pictures/Indian-01.jpg -> Searching/Style_Pictures/Indian-01.jpg
+#	renamed:    Style_Pictures/Indian-02.jpeg -> Searching/Style_Pictures/Indian-02.jpeg
+#	renamed:    Style_Pictures/Indian-03.jpeg -> Searching/Style_Pictures/Indian-03.jpeg
+#	renamed:    Style_Pictures/Indian-04.jpeg -> Searching/Style_Pictures/Indian-04.jpeg
+#	renamed:    Style_Pictures/Indian-05.jpeg -> Searching/Style_Pictures/Indian-05.jpeg
+#	renamed:    Style_Pictures/Indian-06.jpeg -> Searching/Style_Pictures/Indian-06.jpeg
+#	renamed:    Style_Pictures/Indian-07.jpeg -> Searching/Style_Pictures/Indian-07.jpeg
+#	renamed:    Style_Pictures/Indian-08.jpg -> Searching/Style_Pictures/Indian-08.jpg
+#	renamed:    Style_Pictures/Indian_Weaves00.jpg -> Searching/Style_Pictures/Indian_Weaves00.jpg
+#	renamed:    Style_Pictures/Indian_Weaves01.jpg -> Searching/Style_Pictures/Indian_Weaves01.jpg
+#	renamed:    Style_Pictures/Indian_Weaves02.jpg -> Searching/Style_Pictures/Indian_Weaves02.jpg
+#	renamed:    Style_Pictures/Malaysian-01.jpg -> Searching/Style_Pictures/Malaysian-01.jpg
+#	renamed:    Style_Pictures/Malaysian-02.jpeg -> Searching/Style_Pictures/Malaysian-02.jpeg
+#	renamed:    Style_Pictures/Malaysian-03.jpg -> Searching/Style_Pictures/Malaysian-03.jpg
+#	renamed:    Style_Pictures/Malaysian-04.jpeg -> Searching/Style_Pictures/Malaysian-04.jpeg
+#	renamed:    Style_Pictures/Malaysian-05.jpeg -> Searching/Style_Pictures/Malaysian-05.jpeg
+#	renamed:    Style_Pictures/Malaysian-06.jpeg -> Searching/Style_Pictures/Malaysian-06.jpeg
+#	renamed:    Style_Pictures/Malaysian-07.jpeg -> Searching/Style_Pictures/Malaysian-07.jpeg
+#	renamed:    Style_Pictures/Malaysian_Weaves00.jpg -> Searching/Style_Pictures/Malaysian_Weaves00.jpg
+#	renamed:    Style_Pictures/Malaysian_Weaves01.jpeg -> Searching/Style_Pictures/Malaysian_Weaves01.jpeg
+#	renamed:    Style_Pictures/Malaysian_Weaves02.jpg -> Searching/Style_Pictures/Malaysian_Weaves02.jpg
+#	new file:   Searching/Style_Pictures/Mohawk-01.jpg
+#	new file:   Searching/Style_Pictures/Mohawk-02.jpg
+#	renamed:    Style_Pictures/Mohawk-03.jpg -> Searching/Style_Pictures/Mohawk-03.jpg
+#	renamed:    Style_Pictures/Mohawk-04.jpeg -> Searching/Style_Pictures/Mohawk-04.jpeg
+#	renamed:    Style_Pictures/Mohawk-05.jpg -> Searching/Style_Pictures/Mohawk-05.jpg
+#	renamed:    Style_Pictures/Mohawk-06.jpg -> Searching/Style_Pictures/Mohawk-06.jpg
+#	renamed:    Style_Pictures/Mohawk-07.jpeg -> Searching/Style_Pictures/Mohawk-07.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Mohawk.jpg -> Searching/Style_Pictures/Mohawk.jpg
+#	renamed:    Style_Pictures/Peruvian-01.jpeg -> Searching/Style_Pictures/Peruvian-01.jpeg
+#	renamed:    Style_Pictures/Peruvian-02.jpg -> Searching/Style_Pictures/Peruvian-02.jpg
+#	renamed:    Style_Pictures/Peruvian-03.jpg -> Searching/Style_Pictures/Peruvian-03.jpg
+#	renamed:    Style_Pictures/Peruvian-04.jpg -> Searching/Style_Pictures/Peruvian-04.jpg
+#	renamed:    Style_Pictures/Peruvian-05.jpg -> Searching/Style_Pictures/Peruvian-05.jpg
+#	renamed:    Style_Pictures/Peruvian-06.jpg -> Searching/Style_Pictures/Peruvian-06.jpg
+#	renamed:    Style_Pictures/Peruvian-07.jpeg -> Searching/Style_Pictures/Peruvian-07.jpeg
+#	renamed:    Style_Pictures/Peruvian_weaves00.jpg -> Searching/Style_Pictures/Peruvian_weaves00.jpg
+#	renamed:    Style_Pictures/Peruvian_weaves01.jpg -> Searching/Style_Pictures/Peruvian_weaves01.jpg
+#	renamed:    Style_Pictures/Peruvian_weaves02.jpg -> Searching/Style_Pictures/Peruvian_weaves02.jpg
+#	renamed:    Style_Pictures/Peruvian_weaves03.jpg -> Searching/Style_Pictures/Peruvian_weaves03.jpg
+#	renamed:    Style_Pictures/S-curl-01.jpg -> Searching/Style_Pictures/S-curl-01.jpg
+#	renamed:    Style_Pictures/S-curl-02.jpg -> Searching/Style_Pictures/S-curl-02.jpg
+#	renamed:    Style_Pictures/S-curl-03.jpg -> Searching/Style_Pictures/S-curl-03.jpg
+#	renamed:    Style_Pictures/S-curl-04.jpg -> Searching/Style_Pictures/S-curl-04.jpg
+#	renamed:    Style_Pictures/S-curl-05.jpg -> Searching/Style_Pictures/S-curl-05.jpg
+#	renamed:    Style_Pictures/S-curl-06.jpg -> Searching/Style_Pictures/S-curl-06.jpg
+#	renamed:    Style_Pictures/S-curl-07.jpg -> Searching/Style_Pictures/S-curl-07.jpg
+#	renamed:    Style_Pictures/Shave-01.jpeg -> Searching/Style_Pictures/Shave-01.jpeg
+#	renamed:    Style_Pictures/Shave-02.jpg -> Searching/Style_Pictures/Shave-02.jpg
+#	renamed:    Style_Pictures/Shave-03.jpeg -> Searching/Style_Pictures/Shave-03.jpeg
+#	renamed:    Style_Pictures/Shave-05.jpg -> Searching/Style_Pictures/Shave-05.jpg
+#	renamed:    Style_Pictures/Shave-06.jpeg -> Searching/Style_Pictures/Shave-06.jpeg
+#	renamed:    Style_Pictures/Shave-07.jpeg -> Searching/Style_Pictures/Shave-07.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Shave.jpg -> Searching/Style_Pictures/Shave.jpg
+#	renamed:    Style_Pictures/Single-Twist-01.jpeg -> Searching/Style_Pictures/Single-Twist-01.jpeg
+#	renamed:    Style_Pictures/Single-Twist-02.jpeg -> Searching/Style_Pictures/Single-Twist-02.jpeg
+#	renamed:    Style_Pictures/Single-Twist-03.jpeg -> Searching/Style_Pictures/Single-Twist-03.jpeg
+#	renamed:    Style_Pictures/Single-Twist-04.jpeg -> Searching/Style_Pictures/Single-Twist-04.jpeg
+#	renamed:    Style_Pictures/Single-Twist-05.jpg -> Searching/Style_Pictures/Single-Twist-05.jpg
+#	renamed:    Style_Pictures/Single-Twist-06.jpeg -> Searching/Style_Pictures/Single-Twist-06.jpeg
+#	renamed:    Style_Pictures/Single-Twist-07.jpeg -> Searching/Style_Pictures/Single-Twist-07.jpeg
+#	renamed:    Style_Pictures/Single_Twist00.jpg -> Searching/Style_Pictures/Single_Twist00.jpg
+#	renamed:    Style_Pictures/Single_Twist01.jpg -> Searching/Style_Pictures/Single_Twist01.jpg
+#	renamed:    Style_Pictures/Straight-Back-01.jpg -> Searching/Style_Pictures/Straight-Back-01.jpg
+#	renamed:    Style_Pictures/Straight-Back-02.jpg -> Searching/Style_Pictures/Straight-Back-02.jpg
+#	renamed:    Style_Pictures/Straight-Back-03.jpg -> Searching/Style_Pictures/Straight-Back-03.jpg
+#	renamed:    Style_Pictures/Straight-Back-04.jpg -> Searching/Style_Pictures/Straight-Back-04.jpg
+#	renamed:    Style_Pictures/Straight-Back-05.jpg -> Searching/Style_Pictures/Straight-Back-05.jpg
+#	renamed:    Style_Pictures/Straight-Back-06.jpeg -> Searching/Style_Pictures/Straight-Back-06.jpeg
+#	renamed:    Style_Pictures/Straight-Back-07.jpeg -> Searching/Style_Pictures/Straight-Back-07.jpeg
+#	renamed:    Style_Pictures/Straight-Back-08.jpeg -> Searching/Style_Pictures/Straight-Back-08.jpeg
+#	renamed:    Style_Pictures/StraightBack.jpg -> Searching/Style_Pictures/StraightBack.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Tape_In_Extensions00.jpg -> Searching/Style_Pictures/Tape_In_Extensions00.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Tape_In_Extensions01.jpg -> Searching/Style_Pictures/Tape_In_Extensions01.jpg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-00.jpe -> Searching/Style_Pictures/Trim-00.jpe
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-01.jpe -> Searching/Style_Pictures/Trim-01.jpe
+#	renamed:    Style_Pictures/Trim-01.jpeg -> Searching/Style_Pictures/Trim-01.jpeg
+#	renamed:    Style_Pictures/Hair%20Cut/Trim-02.jpe -> Searching/Style_Pictures/Trim-02.jpe
+#	renamed:    Style_Pictures/Trim-02.jpg -> Searching/Style_Pictures/Trim-02.jpg
+#	renamed:    Style_Pictures/Trim-03.jpeg -> Searching/Style_Pictures/Trim-03.jpeg
+#	renamed:    Style_Pictures/Trim-04.jpeg -> Searching/Style_Pictures/Trim-04.jpeg
+#	renamed:    Style_Pictures/Trim-05.jpeg -> Searching/Style_Pictures/Trim-05.jpeg
+#	renamed:    Style_Pictures/Trim-06.jpg -> Searching/Style_Pictures/Trim-06.jpg
+#	renamed:    Style_Pictures/Trim-07.jpeg -> Searching/Style_Pictures/Trim-07.jpeg
+#	renamed:    Style_Pictures/Trim-08.jpg -> Searching/Style_Pictures/Trim-08.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Weave_and_Track_Extenstion00.jpg -> Searching/Style_Pictures/Weave_and_Track_Extenstion00.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/Weave_and_Track_Extenstion01.jpg -> Searching/Style_Pictures/Weave_and_Track_Extenstion01.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-01.jpg -> Searching/Style_Pictures/Weaves/Brazilian-01.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-02.jpg -> Searching/Style_Pictures/Weaves/Brazilian-02.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-03.jpg -> Searching/Style_Pictures/Weaves/Brazilian-03.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-04.jpg -> Searching/Style_Pictures/Weaves/Brazilian-04.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-05.jpg -> Searching/Style_Pictures/Weaves/Brazilian-05.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-06.jpg -> Searching/Style_Pictures/Weaves/Brazilian-06.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian-07.jpeg -> Searching/Style_Pictures/Weaves/Brazilian-07.jpeg
+#	renamed:    Style_Pictures/Weaves/Brazilian_Weave00.jpg -> Searching/Style_Pictures/Weaves/Brazilian_Weave00.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian_Weave01.jpg -> Searching/Style_Pictures/Weaves/Brazilian_Weave01.jpg
+#	renamed:    Style_Pictures/Weaves/Brazilian_Weave02.jpg -> Searching/Style_Pictures/Weaves/Brazilian_Weave02.jpg
+#	renamed:    Style_Pictures/Weaves/Indian-01.jpg -> Searching/Style_Pictures/Weaves/Indian-01.jpg
+#	renamed:    Style_Pictures/Weaves/Indian-02.jpeg -> Searching/Style_Pictures/Weaves/Indian-02.jpeg
+#	renamed:    Style_Pictures/Weaves/Indian-03.jpeg -> Searching/Style_Pictures/Weaves/Indian-03.jpeg
+#	renamed:    Style_Pictures/Weaves/Indian-04.jpeg -> Searching/Style_Pictures/Weaves/Indian-04.jpeg
+#	renamed:    Style_Pictures/Weaves/Indian-05.jpeg -> Searching/Style_Pictures/Weaves/Indian-05.jpeg
+#	renamed:    Style_Pictures/Weaves/Indian-06.jpeg -> Searching/Style_Pictures/Weaves/Indian-06.jpeg
+#	renamed:    Style_Pictures/Weaves/Indian-07.jpeg -> Searching/Style_Pictures/Weaves/Indian-07.jpeg
+#	renamed:    Style_Pictures/Weaves/Indian-08.jpg -> Searching/Style_Pictures/Weaves/Indian-08.jpg
+#	renamed:    Style_Pictures/Weaves/Indian_Weaves00.jpg -> Searching/Style_Pictures/Weaves/Indian_Weaves00.jpg
+#	renamed:    Style_Pictures/Weaves/Indian_Weaves01.jpg -> Searching/Style_Pictures/Weaves/Indian_Weaves01.jpg
+#	renamed:    Style_Pictures/Weaves/Indian_Weaves02.jpg -> Searching/Style_Pictures/Weaves/Indian_Weaves02.jpg
+#	renamed:    Style_Pictures/Weaves/Malaysian-01.jpg -> Searching/Style_Pictures/Weaves/Malaysian-01.jpg
+#	renamed:    Style_Pictures/Weaves/Malaysian-02.jpeg -> Searching/Style_Pictures/Weaves/Malaysian-02.jpeg
+#	renamed:    Style_Pictures/Weaves/Malaysian-03.jpg -> Searching/Style_Pictures/Weaves/Malaysian-03.jpg
+#	renamed:    Style_Pictures/Weaves/Malaysian-04.jpeg -> Searching/Style_Pictures/Weaves/Malaysian-04.jpeg
+#	renamed:    Style_Pictures/Weaves/Malaysian-05.jpeg -> Searching/Style_Pictures/Weaves/Malaysian-05.jpeg
+#	renamed:    Style_Pictures/Weaves/Malaysian-06.jpeg -> Searching/Style_Pictures/Weaves/Malaysian-06.jpeg
+#	renamed:    Style_Pictures/Weaves/Malaysian-07.jpeg -> Searching/Style_Pictures/Weaves/Malaysian-07.jpeg
+#	renamed:    Style_Pictures/Weaves/Malaysian_Weaves00.jpg -> Searching/Style_Pictures/Weaves/Malaysian_Weaves00.jpg
+#	renamed:    Style_Pictures/Weaves/Malaysian_Weaves01.jpeg -> Searching/Style_Pictures/Weaves/Malaysian_Weaves01.jpeg
+#	renamed:    Style_Pictures/Weaves/Malaysian_Weaves02.jpg -> Searching/Style_Pictures/Weaves/Malaysian_Weaves02.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian-01.jpeg -> Searching/Style_Pictures/Weaves/Peruvian-01.jpeg
+#	renamed:    Style_Pictures/Weaves/Peruvian-02.jpg -> Searching/Style_Pictures/Weaves/Peruvian-02.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian-03.jpg -> Searching/Style_Pictures/Weaves/Peruvian-03.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian-04.jpg -> Searching/Style_Pictures/Weaves/Peruvian-04.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian-05.jpg -> Searching/Style_Pictures/Weaves/Peruvian-05.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian-06.jpg -> Searching/Style_Pictures/Weaves/Peruvian-06.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian-07.jpeg -> Searching/Style_Pictures/Weaves/Peruvian-07.jpeg
+#	renamed:    Style_Pictures/Weaves/Peruvian_weaves00.jpg -> Searching/Style_Pictures/Weaves/Peruvian_weaves00.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian_weaves01.jpg -> Searching/Style_Pictures/Weaves/Peruvian_weaves01.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian_weaves02.jpg -> Searching/Style_Pictures/Weaves/Peruvian_weaves02.jpg
+#	renamed:    Style_Pictures/Weaves/Peruvian_weaves03.jpg -> Searching/Style_Pictures/Weaves/Peruvian_weaves03.jpg
+#	renamed:    Style_Pictures/Wigs/Front-lace-01.jpg -> Searching/Style_Pictures/Wigs/Front-lace-01.jpg
+#	renamed:    Style_Pictures/Wigs/Front-lace-02.jpg -> Searching/Style_Pictures/Wigs/Front-lace-02.jpg
+#	renamed:    Style_Pictures/Wigs/Front-lace-03.jpg -> Searching/Style_Pictures/Wigs/Front-lace-03.jpg
+#	renamed:    Style_Pictures/Wigs/Front-lace-04.jpeg -> Searching/Style_Pictures/Wigs/Front-lace-04.jpeg
+#	renamed:    Style_Pictures/Wigs/Front-lace-05.jpg -> Searching/Style_Pictures/Wigs/Front-lace-05.jpg
+#	renamed:    Style_Pictures/Wigs/Front-lace-06.jpg -> Searching/Style_Pictures/Wigs/Front-lace-06.jpg
+#	renamed:    Style_Pictures/Wigs/Front-lace-07.jpeg -> Searching/Style_Pictures/Wigs/Front-lace-07.jpeg
+#	renamed:    Style_Pictures/Wigs/Front_Lace_Closure00.jpg -> Searching/Style_Pictures/Wigs/Front_Lace_Closure00.jpg
+#	renamed:    Style_Pictures/Wigs/Front_Lace_Closure01.jpg -> Searching/Style_Pictures/Wigs/Front_Lace_Closure01.jpg
+#	renamed:    Style_Pictures/Wigs/Full-lace-01.jpg -> Searching/Style_Pictures/Wigs/Full-lace-01.jpg
+#	renamed:    Style_Pictures/Wigs/Full-lace-02.jpg -> Searching/Style_Pictures/Wigs/Full-lace-02.jpg
+#	renamed:    Style_Pictures/Wigs/Full-lace-03.jpg -> Searching/Style_Pictures/Wigs/Full-lace-03.jpg
+#	renamed:    Style_Pictures/Wigs/Full-lace-04.jpg -> Searching/Style_Pictures/Wigs/Full-lace-04.jpg
+#	renamed:    Style_Pictures/Wigs/Full-lace-05.jpeg -> Searching/Style_Pictures/Wigs/Full-lace-05.jpeg
+#	renamed:    Style_Pictures/Wigs/Full-lace-06.jpeg -> Searching/Style_Pictures/Wigs/Full-lace-06.jpeg
+#	renamed:    Style_Pictures/Wigs/Full-lace-07.jpeg -> Searching/Style_Pictures/Wigs/Full-lace-07.jpeg
+#	renamed:    Style_Pictures/Wigs/Full-lace-08.jpg -> Searching/Style_Pictures/Wigs/Full-lace-08.jpg
+#	renamed:    Style_Pictures/Wigs/Full_lace_wigs00.jpg -> Searching/Style_Pictures/Wigs/Full_lace_wigs00.jpg
+#	renamed:    Style_Pictures/Wigs/Full_lace_wigs01.jpg -> Searching/Style_Pictures/Wigs/Full_lace_wigs01.jpg
+#	renamed:    Style_Pictures/Wigs/Full_lace_wigs02.jpg -> Searching/Style_Pictures/Wigs/Full_lace_wigs02.jpg
+#	renamed:    Style_Pictures/faux-Locs-01.jpeg -> Searching/Style_Pictures/faux-Locs-01.jpeg
+#	renamed:    Style_Pictures/faux-Locs-02.jpg -> Searching/Style_Pictures/faux-Locs-02.jpg
+#	renamed:    Style_Pictures/faux-Locs-03.jpg -> Searching/Style_Pictures/faux-Locs-03.jpg
+#	renamed:    Style_Pictures/faux-Locs-04.jpg -> Searching/Style_Pictures/faux-Locs-04.jpg
+#	renamed:    Style_Pictures/faux-Locs-05.jpg -> Searching/Style_Pictures/faux-Locs-05.jpg
+#	renamed:    Style_Pictures/faux-Locs-06.jpeg -> Searching/Style_Pictures/faux-Locs-06.jpeg
+#	renamed:    Style_Pictures/faux-Locs-07.jpg -> Searching/Style_Pictures/faux-Locs-07.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/fusion_extension00.jpg -> Searching/Style_Pictures/fusion_extension00.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/fusion_extension01.jpg -> Searching/Style_Pictures/fusion_extension01.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/fusion_extension02.jpg -> Searching/Style_Pictures/fusion_extension02.jpg
+#	renamed:    Style_Pictures/Hair%20Extensions/fusion_extension03.jpg -> Searching/Style_Pictures/fusion_extension03.jpg
+#	new file:   Searching/Tshepos Code/func_inc.php
+#	new file:   Searching/Tshepos Code/index.php
+#	new file:   Searching/book.php
+#	new file:   Searching/define.php
+#	renamed:    The UI/geolocation.js -> Searching/geolocation.js
+#	new file:   Searching/neww.php
+#	new file:   Searching/salonDetails.html
+#	deleted:    Studio_Names.php
+#	deleted:    Style_Pictures/Chemicals and Hair Wash/Dye_and_Highlights04.jpg
+#	deleted:    Style_Pictures/Chemicals and Hair Wash/Hair_Wash00.jpg
+#	deleted:    Style_Pictures/Chemicals and Hair Wash/S_Curl00.jpg
+#	deleted:    Style_Pictures/Chemicals and Hair Wash/S_Curl01.jpg
+#	deleted:    Style_Pictures/Dye_and_Highlights00.jpg
+#	deleted:    Style_Pictures/Dye_and_Highlights01.jpg
+#	deleted:    Style_Pictures/Dye_and_Highlights02.jpg
+#	deleted:    Style_Pictures/Dye_and_Highlights03.jpg
+#	deleted:    Style_Pictures/Dye_and_Highlights04.jpg
+#	deleted:    Style_Pictures/Hair Cut/Mohawk-01.jpg
+#	deleted:    Style_Pictures/Hair Cut/Mohawk-02.jpg
+#	deleted:    Style_Pictures/Hair Extensions/hidden_Crown_Extensions00.jpg
+#	deleted:    Style_Pictures/Hair Extensions/hidden_Crown_Extensions01.jpg
+#	deleted:    Style_Pictures/Hair%20Cut/Brush-00.jpg
+#	deleted:    Style_Pictures/Hair%20Cut/Brush-01.jpe
+#	deleted:    Style_Pictures/Hair%20Cut/Chiskop.jpg
+#	deleted:    Style_Pictures/Hair%20Cut/Cut-and_Style-00.jpe
+#	deleted:    Style_Pictures/Hair%20Cut/Fade.jpg
+#	deleted:    Style_Pictures/Hair%20Cut/Fade2.jpg
+#	deleted:    Style_Pictures/Hair%20Cut/FineCut.jpg
+#	deleted:    Style_Pictures/Hair%20Cut/FineCut2.jpg
+#	deleted:    Style_Pictures/Hair%20Extensions/Bonding_and_sealing_extensions00.jpg
+#	deleted:    Style_Pictures/Hair%20Extensions/Bonding_and_sealing_extensions01.jpg
+#	deleted:    Style_Pictures/Hair%20Extensions/Clip_In_or_Clip_On_Hair_Extensions01.jpg
+#	deleted:    Style_Pictures/Hair%20Extensions/Clip_In_or_Clip_On_Hair_Extensions02.jpg
+#	deleted:    Style_Pictures/Hair_Relaxing00.jpg
+#	deleted:    Style_Pictures/Hair_Relaxing01.jpg
+#	deleted:    Style_Pictures/Hair_Relaxing02.jpg
+#	deleted:    Style_Pictures/Hair_Wash00.jpg
+#	deleted:    Style_Pictures/Hair_Wash01.jpg
+#	deleted:    Style_Pictures/Hair_Wash02.jpg
+#	deleted:    Style_Pictures/Hair_Wash03.jpg
+#	deleted:    Style_Pictures/Hair_Wash_and_Blow00.jpg
+#	deleted:    Style_Pictures/Mohawk-01.jpg
+#	deleted:    Style_Pictures/Mohawk-02.jpg
+#	deleted:    Style_Pictures/Mohawk.jpg
+#	deleted:    Style_Pictures/S_Curl00.jpg
+#	deleted:    Style_Pictures/S_Curl01.jpg
+#	deleted:    Style_Pictures/Shave.jpg
+#	deleted:    Style_Pictures/Tape_In_Extensions00.jpg
+#	deleted:    Style_Pictures/Tape_In_Extensions01.jpg
+#	deleted:    Style_Pictures/Trim-00.jpe
+#	deleted:    Style_Pictures/Trim-01.jpe
+#	deleted:    Style_Pictures/Trim-02.jpe
+#	deleted:    Style_Pictures/Weave_and_Track_Extenstion00.jpg
+#	deleted:    Style_Pictures/Weave_and_Track_Extenstion01.jpg
+#	deleted:    Style_Pictures/fusion_extension00.jpg
+#	deleted:    Style_Pictures/fusion_extension01.jpg
+#	deleted:    Style_Pictures/fusion_extension02.jpg
+#	deleted:    Style_Pictures/fusion_extension03.jpg
+#	deleted:    Style_Pictures/hidden_Crown_Extensions00.jpg
+#	deleted:    Style_Pictures/hidden_Crown_Extensions01.jpg
+#	deleted:    The UI/css/style.css
+#	deleted:    The UI/gallery.html
+#	deleted:    The UI/hairstyles.html
+#	deleted:    The UI/index.html
+#	deleted:    The UI/js/jquery.vide.min.js
+#	deleted:    The UI/salonDetails.html
+#	deleted:    The%20UI/book.php
+#	deleted:    The%20UI/booking.html
+#	deleted:    The%20UI/final/index01.php
+#	deleted:    The%20UI/modal.html
+#	deleted:    The%2520UI/All.php
+#	deleted:    The%2520UI/Braids.php
+#	deleted:    The%2520UI/Chemicals_and_Hair_Wash.php
+#	deleted:    The%2520UI/Cornrows.php
+#	deleted:    The%2520UI/Dreadlocks.php
+#	deleted:    The%2520UI/Hair_Cut.php
+#	deleted:    The%2520UI/Hair_Extensions.php
+#	deleted:    The%2520UI/Images.php
+#	deleted:    The%2520UI/MakeBooking.php
+#	deleted:    The%2520UI/SalonGallery.php
+#	deleted:    The%2520UI/Salon_Info.php
+#	deleted:    The%2520UI/SearchByLocation.php
+#	deleted:    The%2520UI/SearchbyPriceRange.php
+#	deleted:    The%2520UI/Studio_Names.php
+#	deleted:    The%2520UI/UserLogin.php
+#	deleted:    The%2520UI/Weaves.php
+#	deleted:    The%2520UI/Wigs.php
+#	deleted:    The%2520UI/book.php
+#	deleted:    The%2520UI/booking.php
+#	deleted:    The%2520UI/button.php
+#	deleted:    The%2520UI/changeP.php
+#	deleted:    The%2520UI/changep.html
+#	deleted:    The%2520UI/css/animate.css
+#	deleted:    The%2520UI/css/animate.min.css
+#	deleted:    The%2520UI/css/bootstrap.css
+#	deleted:    The%2520UI/css/font-awesome.css
+#	deleted:    The%2520UI/css/jquery-ui.css
+#	deleted:    The%2520UI/css/style.css
+#	deleted:    The%2520UI/css/swipebox.css
+#	deleted:    The%2520UI/data.php
+#	deleted:    The%2520UI/define.php
+#	deleted:    The%2520UI/fonts/fontawesome-webfont.svg
+#	deleted:    The%2520UI/fonts/glyphicons-halflings-regular.svg
+#	deleted:    The%2520UI/func_inc.php
+#	deleted:    The%2520UI/func_inc2.php
+#	deleted:    The%2520UI/gallery.html
+#	deleted:    The%2520UI/index01.php
+#	deleted:    The%2520UI/js/jquery.vide.min.js
+#	deleted:    The%2520UI/js/maps.js
+#	deleted:    The%2520UI/js/modal.js
+#	deleted:    The%2520UI/registration.php
+#	deleted:    The%2520UI/salonDetails.php
+#	deleted:    The%2520UI/start.php
+#	deleted:    The%2520UI/startbackup2.php
+#	renamed:    The UI/css/animate.css -> The-User-Interface/The UI/css/animate.css
+#	renamed:    The UI/css/animate.min.css -> The-User-Interface/The UI/css/animate.min.css
+#	renamed:    The UI/css/bootstrap.css -> The-User-Interface/The UI/css/bootstrap.css
+#	renamed:    The UI/css/font-awesome.css -> The-User-Interface/The UI/css/font-awesome.css
+#	renamed:    The UI/css/jquery-ui.css -> The-User-Interface/The UI/css/jquery-ui.css
+#	new file:   The-User-Interface/The UI/css/style.css
+#	renamed:    The UI/css/swipebox.css -> The-User-Interface/The UI/css/swipebox.css
+#	renamed:    The UI/fonts/FontAwesome.otf -> The-User-Interface/The UI/fonts/FontAwesome.otf
+#	renamed:    The UI/fonts/fontawesome-webfont.eot -> The-User-Interface/The UI/fonts/fontawesome-webfont.eot
+#	renamed:    The UI/fonts/fontawesome-webfont.svg -> The-User-Interface/The UI/fonts/fontawesome-webfont.svg
+#	renamed:    The UI/fonts/fontawesome-webfont.ttf -> The-User-Interface/The UI/fonts/fontawesome-webfont.ttf
+#	renamed:    The UI/fonts/fontawesome-webfont.woff -> The-User-Interface/The UI/fonts/fontawesome-webfont.woff
+#	renamed:    The UI/fonts/glyphicons-halflings-regular.eot -> The-User-Interface/The UI/fonts/glyphicons-halflings-regular.eot
+#	renamed:    The UI/fonts/glyphicons-halflings-regular.svg -> The-User-Interface/The UI/fonts/glyphicons-halflings-regular.svg
+#	renamed:    The UI/fonts/glyphicons-halflings-regular.ttf -> The-User-Interface/The UI/fonts/glyphicons-halflings-regular.ttf
+#	renamed:    The UI/fonts/glyphicons-halflings-regular.woff -> The-User-Interface/The UI/fonts/glyphicons-halflings-regular.woff
+#	renamed:    The UI/fonts/glyphicons-halflings-regular.woff2 -> The-User-Interface/The UI/fonts/glyphicons-halflings-regular.woff2
+#	new file:   The-User-Interface/The UI/gallery.html
+#	renamed:    geolocation.js -> The-User-Interface/The UI/geolocation.js
+#	new file:   The-User-Interface/The UI/hairstyles.html
+#	renamed:    The UI/images/3.jpg -> The-User-Interface/The UI/images/3.jpg
+#	renamed:    The UI/images/6.jpg -> The-User-Interface/The UI/images/6.jpg
+#	renamed:    The UI/images/arrow.png -> The-User-Interface/The UI/images/arrow.png
+#	renamed:    The UI/images/c5.jpg -> The-User-Interface/The UI/images/c5.jpg
+#	renamed:    The UI/images/date-icon.png -> The-User-Interface/The UI/images/date-icon.png
+#	renamed:    The UI/images/dot.png -> The-User-Interface/The UI/images/dot.png
+#	renamed:    The UI/images/h1.jpg -> The-User-Interface/The UI/images/h1.jpg
+#	renamed:    The UI/images/h2.jpg -> The-User-Interface/The UI/images/h2.jpg
+#	renamed:    The UI/images/icons.svg -> The-User-Interface/The UI/images/icons.svg
+#	renamed:    The UI/images/img-sp.png -> The-User-Interface/The UI/images/img-sp.png
+#	renamed:    The UI/images/img-sprite.png -> The-User-Interface/The UI/images/img-sprite.png
+#	renamed:    The UI/images/map1.png -> The-User-Interface/The UI/images/map1.png
+#	renamed:    The UI/images/mark1.png -> The-User-Interface/The UI/images/mark1.png
+#	renamed:    The UI/images/menu.png -> The-User-Interface/The UI/images/menu.png
+#	renamed:    The UI/images/social.png -> The-User-Interface/The UI/images/social.png
+#	new file:   The-User-Interface/The UI/index.html
+#	renamed:    The UI/js/bootstrap.js -> The-User-Interface/The UI/js/bootstrap.js
+#	renamed:    The UI/js/bootstrap.min.js -> The-User-Interface/The UI/js/bootstrap.min.js
+#	renamed:    The UI/js/easing.js -> The-User-Interface/The UI/js/easing.js
+#	renamed:    The UI/js/jquery-1.11.1.min.js -> The-User-Interface/The UI/js/jquery-1.11.1.min.js
+#	renamed:    The UI/js/jquery-1.12.0.min.js -> The-User-Interface/The UI/js/jquery-1.12.0.min.js
+#	renamed:    The UI/js/jquery-ui.js -> The-User-Interface/The UI/js/jquery-ui.js
+#	renamed:    The UI/js/jquery.swipebox.min.js -> The-User-Interface/The UI/js/jquery.swipebox.min.js
+#	new file:   The-User-Interface/The UI/js/jquery.vide.min.js
+#	renamed:    The UI/js/move-top.js -> The-User-Interface/The UI/js/move-top.js
+#	renamed:    The UI/js/wow.min.js -> The-User-Interface/The UI/js/wow.min.js
+#	new file:   The-User-Interface/The UI/salonDetails.html
+#	new file:   The-User-Interface/The-UI-2/book.php
+#	new file:   The-User-Interface/The-UI-2/booking.html
+#	new file:   The-User-Interface/The-UI-2/final/index01.php
+#	renamed:    The%20UI/images/3.jpg -> The-User-Interface/The-UI-2/images/3.jpg
+#	new file:   The-User-Interface/The-UI-2/modal.html
+#	new file:   The-User-Interface/The-UI-3/All.php
+#	new file:   The-User-Interface/The-UI-3/Braids.php
+#	new file:   The-User-Interface/The-UI-3/Chemicals_and_Hair_Wash.php
+#	new file:   The-User-Interface/The-UI-3/Cornrows.php
+#	new file:   The-User-Interface/The-UI-3/Dreadlocks.php
+#	new file:   The-User-Interface/The-UI-3/Hair_Cut.php
+#	new file:   The-User-Interface/The-UI-3/Hair_Extensions.php
+#	new file:   The-User-Interface/The-UI-3/Images.php
+#	new file:   The-User-Interface/The-UI-3/MakeBooking.php
+#	renamed:    The%2520UI/Salon Images/Billtina Unisex Beauty Salon.PNG -> The-User-Interface/The-UI-3/Salon Images/Billtina Unisex Beauty Salon.PNG
+#	renamed:    The%2520UI/Salon Images/Buyi's hair Salon.PNG -> The-User-Interface/The-UI-3/Salon Images/Buyi's hair Salon.PNG
+#	renamed:    The%2520UI/Salon Images/Celeb Style Hair and Cosmetics.PNG -> The-User-Interface/The-UI-3/Salon Images/Celeb Style Hair and Cosmetics.PNG
+#	renamed:    The%2520UI/Salon Images/Chana Salon.PNG -> The-User-Interface/The-UI-3/Salon Images/Chana Salon.PNG
+#	renamed:    The%2520UI/Salon Images/FM Hair and Beauty Studio 2.PNG -> The-User-Interface/The-UI-3/Salon Images/FM Hair and Beauty Studio 2.PNG
+#	renamed:    The%2520UI/Salon Images/FM Hair and Beauty Studio.PNG -> The-User-Interface/The-UI-3/Salon Images/FM Hair and Beauty Studio.PNG
+#	renamed:    The%2520UI/Salon Images/Generale Hair Zone.PNG -> The-User-Interface/The-UI-3/Salon Images/Generale Hair Zone.PNG
+#	renamed:    The%2520UI/Salon Images/Glamour Hair and Beauty Salon.PNG -> The-User-Interface/The-UI-3/Salon Images/Glamour Hair and Beauty Salon.PNG
+#	renamed:    The%2520UI/Salon Images/Nelly's Hair Salon.PNG -> The-User-Interface/The-UI-3/Salon Images/Nelly's Hair Salon.PNG
+#	renamed:    The%2520UI/Salon Images/Queens Hair Paradise Salon.PNG -> The-User-Interface/The-UI-3/Salon Images/Queens Hair Paradise Salon.PNG
+#	renamed:    The%2520UI/Salon Images/Skydiva BeautyWorks.PNG -> The-User-Interface/The-UI-3/Salon Images/Skydiva BeautyWorks.PNG
+#	new file:   The-User-Interface/The-UI-3/SalonGallery.php
+#	new file:   The-User-Interface/The-UI-3/Salon_Info.php
+#	new file:   The-User-Interface/The-UI-3/SearchByLocation.php
+#	new file:   The-User-Interface/The-UI-3/SearchbyPriceRange.php
+#	new file:   The-User-Interface/The-UI-3/Studio_Names.php
+#	new file:   The-User-Interface/The-UI-3/UserLogin.php
+#	new file:   The-User-Interface/The-UI-3/Weaves.php
+#	new file:   The-User-Interface/The-UI-3/Wigs.php
+#	new file:   The-User-Interface/The-UI-3/book.php
+#	new file:   The-User-Interface/The-UI-3/booking.php
+#	new file:   The-User-Interface/The-UI-3/css/animate.css
+#	new file:   The-User-Interface/The-UI-3/css/animate.min.css
+#	new file:   The-User-Interface/The-UI-3/css/bootstrap.css
+#	new file:   The-User-Interface/The-UI-3/css/font-awesome.css
+#	new file:   The-User-Interface/The-UI-3/css/jquery-ui.css
+#	new file:   The-User-Interface/The-UI-3/css/style.css
+#	new file:   The-User-Interface/The-UI-3/css/swipebox.css
+#	new file:   The-User-Interface/The-UI-3/define.php
+#	renamed:    The%2520UI/favicon.ico -> The-User-Interface/The-UI-3/favicon.ico
+#	renamed:    The%2520UI/fonts/FontAwesome.otf -> The-User-Interface/The-UI-3/fonts/FontAwesome.otf
+#	renamed:    The%2520UI/fonts/fontawesome-webfont.eot -> The-User-Interface/The-UI-3/fonts/fontawesome-webfont.eot
+#	new file:   The-User-Interface/The-UI-3/fonts/fontawesome-webfont.svg
+#	renamed:    The%2520UI/fonts/fontawesome-webfont.ttf -> The-User-Interface/The-UI-3/fonts/fontawesome-webfont.ttf
+#	renamed:    The%2520UI/fonts/fontawesome-webfont.woff -> The-User-Interface/The-UI-3/fonts/fontawesome-webfont.woff
+#	renamed:    The%2520UI/fonts/glyphicons-halflings-regular.eot -> The-User-Interface/The-UI-3/fonts/glyphicons-halflings-regular.eot
+#	new file:   The-User-Interface/The-UI-3/fonts/glyphicons-halflings-regular.svg
+#	renamed:    The%2520UI/fonts/glyphicons-halflings-regular.ttf -> The-User-Interface/The-UI-3/fonts/glyphicons-halflings-regular.ttf
+#	renamed:    The%2520UI/fonts/glyphicons-halflings-regular.woff -> The-User-Interface/The-UI-3/fonts/glyphicons-halflings-regular.woff
+#	renamed:    The%2520UI/fonts/glyphicons-halflings-regular.woff2 -> The-User-Interface/The-UI-3/fonts/glyphicons-halflings-regular.woff2
+#	new file:   The-User-Interface/The-UI-3/func_inc.php
+#	new file:   The-User-Interface/The-UI-3/func_inc2.php
+#	new file:   The-User-Interface/The-UI-3/gallery.html
+#	renamed:    The%2520UI/images/3.jpg -> The-User-Interface/The-UI-3/images/3.jpg
+#	renamed:    The%2520UI/images/6.jpg -> The-User-Interface/The-UI-3/images/6.jpg
+#	renamed:    The%2520UI/images/arrow.png -> The-User-Interface/The-UI-3/images/arrow.png
+#	renamed:    The%2520UI/images/c5.jpg -> The-User-Interface/The-UI-3/images/c5.jpg
+#	renamed:    The%2520UI/images/date-icon.png -> The-User-Interface/The-UI-3/images/date-icon.png
+#	renamed:    The%2520UI/images/dot.png -> The-User-Interface/The-UI-3/images/dot.png
+#	renamed:    The%2520UI/images/h1.jpg -> The-User-Interface/The-UI-3/images/h1.jpg
+#	renamed:    The%2520UI/images/h2.jpg -> The-User-Interface/The-UI-3/images/h2.jpg
+#	renamed:    The%2520UI/images/icons.svg -> The-User-Interface/The-UI-3/images/icons.svg
+#	renamed:    The%2520UI/images/img-sp.png -> The-User-Interface/The-UI-3/images/img-sp.png
+#	renamed:    The%2520UI/images/img-sprite.png -> The-User-Interface/The-UI-3/images/img-sprite.png
+#	renamed:    The%2520UI/images/logo.jpg -> The-User-Interface/The-UI-3/images/logo.jpg
+#	renamed:    The%2520UI/images/map1.png -> The-User-Interface/The-UI-3/images/map1.png
+#	renamed:    The%2520UI/images/mark1.png -> The-User-Interface/The-UI-3/images/mark1.png
+#	renamed:    The%2520UI/images/menu.png -> The-User-Interface/The-UI-3/images/menu.png
+#	renamed:    The%2520UI/images/social.png -> The-User-Interface/The-UI-3/images/social.png
+#	new file:   The-User-Interface/The-UI-3/index01.php
+#	renamed:    The%2520UI/js/bootstrap.js -> The-User-Interface/The-UI-3/js/bootstrap.js
+#	renamed:    The%2520UI/js/bootstrap.min.js -> The-User-Interface/The-UI-3/js/bootstrap.min.js
+#	renamed:    The%2520UI/js/easing.js -> The-User-Interface/The-UI-3/js/easing.js
+#	renamed:    The%2520UI/js/jquery-1.11.1.min.js -> The-User-Interface/The-UI-3/js/jquery-1.11.1.min.js
+#	renamed:    The%2520UI/js/jquery-1.12.0.min.js -> The-User-Interface/The-UI-3/js/jquery-1.12.0.min.js
+#	renamed:    The%2520UI/js/jquery-ui.js -> The-User-Interface/The-UI-3/js/jquery-ui.js
+#	renamed:    The%2520UI/js/jquery.swipebox.min.js -> The-User-Interface/The-UI-3/js/jquery.swipebox.min.js
+#	new file:   The-User-Interface/The-UI-3/js/jquery.vide.min.js
+#	new file:   The-User-Interface/The-UI-3/js/maps.js
+#	new file:   The-User-Interface/The-UI-3/js/modal.js
+#	renamed:    The%2520UI/js/move-top.js -> The-User-Interface/The-UI-3/js/move-top.js
+#	renamed:    The%2520UI/js/wow.min.js -> The-User-Interface/The-UI-3/js/wow.min.js
+#	new file:   The-User-Interface/The-UI-3/registration.php
+#	new file:   The-User-Interface/The-UI-3/salonDetails.php
+#	new file:   The-User-Interface/The-UI-3/start.php
+#	new file:   The-User-Interface/The-UI-3/startbackup2.php
+#	renamed:    facebook share -> The-User-Interface/facebook share
+#	new file:   The-User-Interface/func_inc.php
+#	new file:   The-User-Interface/func_inc2.php
+#	new file:   The-User-Interface/index.html
+#	new file:   The-User-Interface/index.php
+#	new file:   The-User-Interface/index01.php
+#	new file:   The-User-Interface/index2.php
+#	new file:   The-User-Interface/index3.php
+#	new file:   The-User-Interface/start.php
+#	new file:   The-User-Interface/startbackup.php
+#	new file:   The-User-Interface/startbackup2.php
+#	deleted:    Tshepos Code/func_inc.php
+#	deleted:    Tshepos Code/index.php
+#	deleted:    Tshepos%20Code/SearchByPriceRanges/func_inc3.php
+#	deleted:    Tshepos%20Code/SearchByPriceRanges/func_inc4.php
+#	deleted:    Tshepos%20Code/SearchByPriceRanges/proto.php
+#	deleted:    Tshepos%20Code/define.php
+#	deleted:    UserLogin.php
+#	deleted:    Weaves.php
+#	deleted:    Wigs.php
+#	deleted:    applications.html
+#	deleted:    basic-html.html
+#	deleted:    bitnami.css
+#	deleted:    book.php
+#	deleted:    booking.html
+#	deleted:    booking.php
+#	deleted:    button.php
+#	deleted:    changeP.php
+#	deleted:    changep.html
+#	deleted:    define.php
+#	deleted:    facebook_index.html
+#	deleted:    func_inc.php
+#	deleted:    func_inc2.php
+#	deleted:    gallery.html
+#	deleted:    hair_studios/all_studios.frm
+#	deleted:    hair_studios/all_studios.ibd
+#	deleted:    hair_studios/db.opt
+#	deleted:    hair_studios/hair_category.frm
+#	deleted:    hair_studios/hair_category.ibd
+#	deleted:    hair_studios/hair_styles.frm
+#	deleted:    hair_studios/hair_styles.ibd
+#	deleted:    hair_studios/pricing.frm
+#	deleted:    hair_studios/pricing.ibd
+#	deleted:    images/3.jpg
+#	deleted:    images/6.jpg
+#	deleted:    images/arrow.png
+#	deleted:    images/c5.jpg
+#	deleted:    images/date-icon.png
+#	deleted:    images/dot.png
+#	deleted:    images/h1.jpg
+#	deleted:    images/h2.jpg
+#	deleted:    images/icons.svg
+#	deleted:    images/img-sp.png
+#	deleted:    images/img-sprite.png
+#	deleted:    images/map1.png
+#	deleted:    images/mark1.png
+#	deleted:    images/menu.png
+#	deleted:    images/social.png
+#	deleted:    img/module_table_bottom.png
+#	deleted:    img/module_table_top.png
+#	deleted:    index.html
+#	deleted:    index.php
+#	deleted:    index01.php
+#	deleted:    index2.php
+#	deleted:    index3.php
+#	deleted:    new.html
+#	deleted:    neww.php
+#	deleted:    one.jpg
+#	deleted:    php scripts/UserLogin.php
+#	deleted:    php scripts/basic-html.html
+#	deleted:    php scripts/connect.php
+#	deleted:    php scripts/index.php
+#	deleted:    php scripts/registration.php
+#	deleted:    php%20scripts/UserLogin.php
+#	deleted:    php%20scripts/basic-html.html
+#	deleted:    php%20scripts/connect.php
+#	deleted:    php%20scripts/define.php
+#	deleted:    php%20scripts/func_inc.php
+#	deleted:    php%20scripts/index.php
+#	deleted:    php%20scripts/registration.php
+#	deleted:    registration.php
+#	deleted:    salonDetails.html
+#	deleted:    start.php
+#	deleted:    startbackup.php
+#	deleted:    startbackup2.php
+#	deleted:    testSalonGallery.php
+#	deleted:    tester.php
+#	deleted:    testingform.html
+#	deleted:    users/all_users.frm
+#	deleted:    users/all_users.ibd
+#	deleted:    users/db.opt
+#
+
