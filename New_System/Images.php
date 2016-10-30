@@ -1,4 +1,4 @@
-
+<?php session_start();?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -47,7 +47,7 @@
 	<div class="container">
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 			
 			<li class="sig"><a href="#"  ><?php 
-			session_start();
+
 			$name = $_SESSION['res'];
 			echo $name;?></a></li> 
 			<li class="sigi"><a href="index01.php" >  Sign out</a></li>
@@ -87,10 +87,13 @@
 include_once 'define.php';
 
     $img_url = "http://www.domain.com/images/"; 
-    $result = mysqli_query($con,"SELECT Hairstyle_Picture,Style_ID FROM pricing where Studio_ID=1");
 	
+	
+	$id=$_GET['id'];
+    $result = mysqli_query($con,"SELECT Hairstyle_Picture,Style_ID FROM pricing where Studio_ID='$id'");
+	$_GET['id']=$id;
     while($row = mysqli_fetch_assoc($result)) 
-    { echo '<a href="booking.php">';
+    { echo "<a href='booking.php?id=$id'>";
 echo '<img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. ' "width="225" height="200"  style="margin-right: 5px"/></a>';
         
     }
