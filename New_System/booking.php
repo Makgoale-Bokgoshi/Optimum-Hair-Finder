@@ -279,7 +279,7 @@
 									$con=mysqli_connect($mysqlserver,$mysqlusername,$mysqlpassword) or die("Failed to connect to MySQL: " . mysqli_error());
 									$db=mysqli_select_db($con,$dbname) or die("Failed to connect to MySQL: " . mysqli_error());
 						
-						$name=$_SESSION['id'] ;
+						$name=$_GET['id'] ;
 						$cord= mysqli_query($con,"SELECT `Latitude` FROM `all_studios` where Studio_ID='$name' ");
 						
 						while($results = mysqli_fetch_array($cord)){
