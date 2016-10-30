@@ -94,7 +94,7 @@ include_once 'define.php';
 echo '<img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. ' "width="225" height="200"  style="margin-right: 5px"/></a>';
         
     }
-	?>?>
+	?>
 	</div>
 	</div>
 	<!---copy-right ---->
