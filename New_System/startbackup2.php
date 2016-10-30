@@ -124,7 +124,7 @@
 														$res=mysqli_query($con,"SELECT `Studio_ID`,`Studio_Name`,`Address_link`,`Telephone` FROM `all_studios` WHERE Studio_Name = '$var'");
 
 														$row = mysqli_fetch_assoc($res);
-														$add=$row["Address_link"] ;
+														
 														$Tel= $row["Telephone"];
 														$ID=$row["Studio_ID"] ;
 												
@@ -136,8 +136,7 @@
 														echo $row["Telephone"];
 														echo '</div>';
 														echo '<div class="col-md-6 details-middle wow fadeInUp animated" data-wow-delay=".5s">';
-														echo '
-																	<a href="'.$add. '" ><h5>Map directions</h5></a>';
+														
 														echo "	<a href='Images.php?id=$ID' class='view'>View Salon Gallery</a>";
 																echo '</div>';
 																echo '</div>
