@@ -1,12 +1,10 @@
 <?php
-$hostname="localhost"; //local server name default localhost
-$username="root";  //mysql username default is root.
-$password="";       //blank if no password is set for mysql.
-$database="hair_studios";  //database name which you created
-$con=mysqli_connect($hostname,$username,$password,$database);
-if(! $con)
-{
-        die('Connection Failed'.mysql_error());
-}
+	$mysqlserver ="localhost";
+	$mysqlusername ="root";
+	$mysqlpassword ='';
+	$dbname = "hair_studios";
 	
+	$con=mysql_connect($mysqlserver,$mysqlusername,$mysqlpassword) or die("Failed to connect to MySQL: " . mysql_error());
+	$db=mysql_select_db($dbname,$con) or die("Failed to connect to MySQL: " . mysql_error());	
+	//echo "Connected"
 ?>
