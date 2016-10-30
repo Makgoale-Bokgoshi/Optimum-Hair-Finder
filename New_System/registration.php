@@ -22,7 +22,8 @@ If(isset($_REQUEST['submit']))
 		$res=mysqli_query($con,$sql);
 		if($res)
 		{
-		
+		session_start();
+		$_SESSION['res'] = "Hello ".$_POST['name']. "	|";
 			echo '<script language="javascript">';
 			echo 'alert("Welcome!")';
 			echo '</script>';
