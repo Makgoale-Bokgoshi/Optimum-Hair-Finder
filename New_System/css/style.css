@@ -138,13 +138,9 @@ i.fa.fa-lock {
 /*-- /header --*/
 /*-- banner --*/
 .banner {
-    background: url(../images/3.jpg)no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    min-height: 430px;
+   
+    text-align: center;
+    min-height: 230px;
 }
 .banner h1 {
     font-size: 50px;
@@ -376,13 +372,13 @@ a.learn:focus,a.learn:hover {
 /*-- /footer --*/
 /*-- bus --*/
 .banner-1 {
-    background: url(../images/3.jpg)no-repeat;
-    background-size: cover;
+    
+   
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height:200px;
+    min-height:47px;
 }
 .banner-1 h1 {
     font-size: 50px;
@@ -725,6 +721,7 @@ a.regist:hover{
     font-size: 15px;
     border: none;
     border-radius: 2px;
+	margin-bottom: 60px;
 }
 .agent-left input[type="submit"]:hover{
     background: #1f8dd6;
