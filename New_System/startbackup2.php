@@ -1,7 +1,9 @@
 <?php
-	include 'func_inc.php';
+	include 'define.php';
+	include 'functions.php';
 	session_start();
 ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -70,141 +72,75 @@
 <!--- /footer-btm ---->
 <!--- banner ---->
 <div class="banner">
-	
-</div>
+<div class="container">
+	<h3>Optimum hair finder</h3>
+	<p> </p>
+	<p> </p>
+	<p>**************************************
+ </p><p>
+Your only option in finding hair salons.</p>
+<p></p>
+<p>Our system allows you to search for hair salons by the your prefered hairstyle, or in the location you are in and also accomodates your pockets by allowing you to search for your perferred hairstyles by the price range you preferred. 
+<p>    </p>
+The system allows to you also book your appointment at the your perferred hairstyle of your choice and get the most convenient route to the hair salon you chose</p>
+</div></div>
 	<div class="container">
-	
-	
-						<form method = "post" action="#More">
-						
-						<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s">
-							<h2>Search for Salons in Gauteng</h2>
-							<div class="ban-top">
-								<select name="cityB" id="city" onchange="showDiv1()" class="grayTextNormal">
-									<option value="-- Select State --">-- Select Location --</option>
-									<option value="Braamfontein">Braamfontein</option>
-									<option value="Auckland park">Auckland park</option>
-									<option value="Newtown">Newtown</option>
-									<option value="Bedfordview">Bedfordview</option>
-								</select>
-									
-							</div>
-					
-						</div>
-						<div class="clearfix"></div>
-					<div id="More1" style="display:None;">
-								<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s">
-								<h2>Search for Salons by Hair Category</h2>
-										<select name="hair_cate" id="haircategory" class="grayTextNormal">
-											<option value="-- Select State --">-- Select Category --</option>
-											<?php
-												checkboxquery(); 
-											?>
-										</select>
-								
-								<div class="sear">
-									<?php
-								include 'define.php';
-								
-										if (isset($_POST['shair'])){
-											$hnum = numhair();
-											$lnum = numloc();
-					
-											$hairArr = haircate();
-											$locArr = location();
-											$i = 0;
-											$j = 0;
-	
-											while($i < $hnum){
-												for($j = 0; $j < $lnum; $j++){
-													if($hairArr[$i]['Studio_Name'] == $locArr[$j]['Studio_Name']){
-														
-														
-														$var = $hairArr[$i]['Studio_Name'];
-														$res=mysqli_query($con,"SELECT `Studio_ID`,`Studio_Name`,`Address_link`,`Telephone` FROM `all_studios` WHERE Studio_Name = '$var'");
 
-														$row = mysqli_fetch_assoc($res);
-														
-														$Tel= $row["Telephone"];
-														$ID=$row["Studio_ID"] ;
-												
-														$_SESSION['id']= $ID;
-														echo '<div class="container">
-														<div class="details-top">';
-														echo '<div class="col-md-6 details-middle wow fadeInUp animated" data-wow-delay=".5s">';
-														echo '<h3>' . $var .'</h3>';
-														echo $row["Telephone"];
-														echo '</div>';
-														echo '<div class="col-md-6 details-middle wow fadeInUp animated" data-wow-delay=".5s">';
-														
-														echo "	<a href='Images.php?id=$ID' class='view'>View Salon Gallery</a>";
-																echo '</div>';
-																echo '</div>
-																</div>
-																
-																	<div class="clearfix"></div>';
-														
-														break;
-													}//end of if statement
-												}//end of for
-												$i++;
-											}//end of while
-										}//end of if isset
-									?>
-									<input type="submit" name="shair" onclick="#More" value="Search For Salons" class="seabtn">
-								
-								</div>
-								</div>
-						</div>					
-			</div>
-				</div>
-				
-					</form>
-		</div>
-		<script> 
+<script> 
 	function showDiv1(){
 		document.getElementById('More1').style.display = "block";
 	}
-	</script>	<div id="More" style="display:none;"> 
-	<?php
+	</script>	
+		<div>
+			<h1>Select your Search Option</h1>
+			<br>
+			
+			<br>
+				<h2>Choose HairStyle</h2>
+					<form method = "POST" action = "call.php">
+						
+						<select name ="hairstyle" >
+							<option value="">-- Select HairStyle --</option>
+							<?php
+								hairstyleopt();
+							?>
+							
+						</select>
+				<br>
+				<h2>Choose Location</h2>
+						<select name = "location" id = "location">
+							<option value="">-- Select Location --</option>
+							<?php
+								locationopt();
+							?>
+							
+						</select>
+						
+				<h2>Choose MinPrice</h2>		
+						<select name = "minprice" id = "MinPrice">
+							<option value="">-- Select MinPrice --</option>
+							<?php
+								minpriceopt();
+							?>
+							
+						</select>
+						
+				<h2>Choose MaxPrice</h2>		
+						<select name = "maxprice" id = "MaxPrice">
+							<option value="">-- Select MaxPrice --</option>
+							<?php
+								maxpriceopt();
+							?>							
+						</select>
+						<br/>
+						<br/>
+						
+						
+						<input type="submit" name = "submit" onClick = "call.php">
+					</form>
 
-	include_once 'func_inc.php';
-	
-	function whatever(){
-		$hnum = numhair();
-		$lnum = numloc();
-		
-		$hairArr = haircate();
-		$locArr = location();
-		$i = 0;
-		$j = 0;
-		
-		while($i < $hnum){
-									for($j = 0; $j < $lnum; $j++){
-										if($hairArr[$i]['Studio_Name'] == $locArr[$j]['Studio_Name']){
-											$var = $hairArr[$i]['Studio_Name'];
-																																
-											echo '<h3>' . $var .'</h3>';
-											echo '<p>Newtown</p>';
-											echo '<div class="clearfix"></div>
-													<li><i class="fa fa-female"></i></li>
-												</div>
-												<div class="col-md-3 details-right wow fadeInRight animated" data-wow-delay=".5s">
-													<a href="salonDetails.php" ><h5>Map directions</h5></a>
-													<a href="hairstyles.html" class="view">View Salon Gallery</a>
-												</div>
-												<div class="clearfix">';
-											
-											break;
-				}//end of if statement
-			}//end of for
-			$i++;
-		}//end of while
-	}//end of function whatever
-	//whatever();
-?>
-	</div>
-</div>
+							
+		</div>
 <script> 
 function showDiv(){
 document.getElementById('More').style.display = "block";
@@ -214,6 +150,7 @@ cityH.innerText ="Salons in: " + e.options[e.selectedIndex].text;
 }
 
 </script>
+<div class="clearfix"></div></div>
 	<!---copy-right ---->
 <div class="copy-right">
 	<div class="container">
@@ -222,92 +159,13 @@ cityH.innerText ="Salons in: " + e.options[e.selectedIndex].text;
 			<ul>
 				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
 				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
-				<li><a class="flickr" href="#"><span>Flickr</span></a></li>
-				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
-				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+				
 			</ul>
 		</div>
 		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">2016 Optimum hair finder . All Rights Reserved</p>
 	</div>
 </div>
 <!---copy-right ---->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-							<section>
-								<div class="modal-body modal-spa">
-									<div class="login-grids">
-										<div class="login">
-											<div class="login-left">
-												<ul>
-													<li><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Sign in with facebook</fb:login-button></li>
-													
-												</ul>
-											</div>
-											<div class="login-right">
-												<form>
-													<h3>Create Account </h3>
-													<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-													<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-													<input type="text" value="Email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-													<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-													<input type="submit" value="CREATE ACCOUNT">
-												</form>
-											</div>
-												<div class="clearfix"></div>								
-										</div>
-											
-									</div>
-								</div>
-							</section>
-					</div>
-				</div>
-			</div>
-<!-- //sign -->
-<!-- signin -->
-		<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="login-grids">
-								<div class="login">
-									<div class="login-left">
-										<ul>
-											<li><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Sign in with facebook</fb:login-button></li>
-										</ul>
-									</div>
-									<div class="login-right">
-										<form>
-											<h3>Sign in </h3>
-											<input type="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											<h4><a href="#myModal4">Forgot password</a></h4>
-											<div class="single-bottom">
-												<input type="checkbox" id="brand" value="">
-												<label for="brand"><span></span>Remember Me.</label>
-											</div>
-											<input type="submit" value="SIGNIN">
-										</form>
-									</div>
-									<div class="clearfix"></div>								
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-		</div>
-		
-
-			
-
-
 </body>
 
 </html>
