@@ -92,12 +92,43 @@ include 'define.php';
 	
     while($row = mysqli_fetch_assoc($result)) 
     { 
-echo '<img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. '" width="225" height="200"  style="margin-right: 5px "/>';
+echo  '<a href="#" id="link1" data-toggle="modal" data-target="#myModal"><img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. '" width="225" height="200"  style="margin-right: 5px "/></a>';
         
     }
 ?>
 
+             
+  </div>  
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center;">Weaves </h4>
+        </div>
+        <div class="modal-body" id="showImg">
+          <!-- here we create the image dynamically -->
+        </div>
+       <div class="modal-footer">
+		<button class="btn btn-default" onclick="location.href='booking.php?id=<?php echo $_GET['id']?>'">Book now</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+    $('img').on('click', function() {
+        $("#showImg").empty();
+        var image = $(this).attr("src");
+        $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+    })
+});
+</script>
 
 </div>
 	</div>
