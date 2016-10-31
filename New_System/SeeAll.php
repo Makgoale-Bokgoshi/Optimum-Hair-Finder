@@ -44,7 +44,7 @@
 <body>
 <!-- top-header -->
 <div class="top-header">
-	<div class="container">
+	<div class="container" style="/*! border: blue; */border: 1px solid rgba(183, 209, 224, 0.6);width: 965px;">
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 			
 			<li class="sig"><a href="#"  ><?php 
 
@@ -58,7 +58,7 @@
 <!--- /top-header ---->
 <!--- footer-btm ---->
 <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
-		<div class="container">
+		<div class="container" style="/*! border: blue; */border: 1px solid rgba(183, 209, 224, 0.6);width: 965px;">
 				<div class="navigation">
 					<nav class="navbar navbar-default">
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -81,7 +81,7 @@
 </div>
 <div class="agent">
 <div class="ag-bt"><h3 style="text-align: -moz-center;">Gallery</h3> </div>
-	<div class="container"style="/*! border: blue; */border: 1px solid rgba(183, 209, 224, 0.6);">
+	<div class="container" style="/*! border: blue; */border: 1px solid rgba(183, 209, 224, 0.6);width: 965px;"style="/*! border: blue; */border: 1px solid rgba(183, 209, 224, 0.6);">
 	
 
 <?php
@@ -92,7 +92,7 @@
 	
     while($row = mysqli_fetch_assoc($result)) 
     { 
-echo '<img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. '" width="225" height="200"  style="margin-right: 5px "/>';
+echo  '<a href="#" id="link1" data-toggle="modal" data-target="#myModal"><img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. '" width="225" height="200"  style="margin-right: 5px "/></a>';
         
     }
 ?>
@@ -102,17 +102,48 @@ echo '<img src="./Style_Pictures/'.$row["Hairstyle_Picture"]. '" width="225" hei
 
 </div>
 	</div>
+	
+	             
+  </div>  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center;">All categories </h4>
+        </div>
+        <div class="modal-body" id="showImg">
+          <!-- here we create the image dynamically -->
+        </div>
+        <div class="modal-footer">
+		<button class="btn btn-default" onclick="location.href='booking.php?id=<?php echo $_GET['id']?>'">Book now</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+    $('img').on('click', function() {
+        $("#showImg").empty();
+        var image = $(this).attr("src");
+        $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+    })
+});
+</script>
 	<!---copy-right ---->
 <div class="copy-right">
-	<div class="container">
+	<div class="container" style="/*! border: blue; */border: 1px solid rgba(183, 209, 224, 0.6);width: 965px;">
 	
 		<div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<ul>
 				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
 				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
-				<li><a class="flickr" href="#"><span>Flickr</span></a></li>
-				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
-				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+				
 			</ul>
 		</div>
 		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">?2016 Optimum hair finder . All Rights Reserved</p>
