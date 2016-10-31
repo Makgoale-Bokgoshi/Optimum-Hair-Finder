@@ -127,17 +127,18 @@
 	<?php 
 include_once 'define.php';
  
-echo"   <a href='Braids1.php?id=$var '>Braids</a>
+echo"   <a href='seeAll.php?id=$var '><h2>View all Categories</h2></a><br>
+<a href='Braids1.php?id=$var '><h2>Braids</h2></a>
 	<br>
-	<a href='Hair-Cut1.php?id=$var '>Hair Cut</a>
+	<a href='Hair-Cut1.php?id=$var '><h2>Hair Cut</h2></a>
 	<br>
-	<a href='Dreadlocks1.php?id=$var '>Dreadlocks</a><br>
-	<a href='Wigs1.php?id=$var '>Wigs</a><br>
-	<a href='Chemicals-and-Hair-Wash1.php?id=$var '>Chemicals and Hair Wash</a><br>
-	<a href='Weaves1.php?id=$var '>Weaves</a><br>
-	<a href='Cornrows1.php?id=$var '>Cornrows</a><br>
-	<a href='Hair-Extensions1.php?id=$var '>Hair Extensions</a><br>
-	<a href='seeAll.php?id=$var '>View all Categories</a><br>";
+	<a href='Dreadlocks1.php?id=$var '><h2>Dreadlocks</h2></a><br>
+	<a href='Wigs1.php?id=$var '><h2>Wigs</h2></a><br>
+	<a href='Chemicals-and-Hair-Wash1.php?id=$var '><h2>Chemicals and Hair Wash</h2></a><br>
+	<a href='Weaves1.php?id=$var '><h2>Weaves</h2></a>
+	<a href='Cornrows1.php?id=$var '><h2>Cornrows</h2></a><br>
+	<a href='Hair-Extensions1.php?id=$var '><h2>Hair Extensions</h2></a><br>
+	";
   
 	?>
 	</div>
@@ -150,9 +151,7 @@ echo"   <a href='Braids1.php?id=$var '>Braids</a>
 			<ul>
 				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
 				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
-				<li><a class="flickr" href="#"><span>Flickr</span></a></li>
-				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
-				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+				
 			</ul>
 		</div>
 		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">?2016 Optimum hair finder . All Rights Reserved</p>
